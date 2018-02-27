@@ -1,0 +1,39 @@
+canonifyurls = true
+paginate = 10
+baseURL = "https://rgpkorea.github.io"
+languageCode = "ko-KR"
+title = "RGP Tech Blog"
+theme = "startbootstrap-clean-blog"
+publishdir = "dist"
+copyright = "Copyright © RGP Korea. All Rights Reserved."
+
+[Taxonomies]
+    tag = "tags"
+
+[Params]
+    Description = "\"함께\" 일하고 싶은 다양한 개성의"
+    SubDescription = "알지피 코리아인 지식공유 공간"
+    DateForm = "January 2, 2006"
+    postSummariesFrontPage = 6 #Number of post summaries to show on front page, comment out to allow default(4)
+    showReadTime = true #set to false to exclude read time from header of post    
+    opengraph = true
+    ImagePosts = "post-sample-image.jpg"
+    ImageInterview = "contact-bg.jpg"
+
+[Permalinks]
+    post = "/:year/:month/:day/:filename/"
+
+[[menu.main]]
+    name = "Home"
+    url = "/"
+    weight = -300
+
+[[menu.main]]
+    name = "Posts"
+    url = "/posts/"
+    weight = -200
+
+[[menu.main]]
+    name = "Interview"
+    url = "/interview/"
+    weight = -180
