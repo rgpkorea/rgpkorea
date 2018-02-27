@@ -1,1 +1,1 @@
-# rgpkorea.github.io
+# RGP Korea Blog

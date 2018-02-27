@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>posts on RGP Tech Blog</title>
+    <link>https://rgpkorea.github.io/posts/</link>
+    <description>Recent content in posts on RGP Tech Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ko-KR</language>
+    <copyright>Copyright © RGP Korea. All Rights Reserved.</copyright>
+    <lastBuildDate>Fri, 23 Feb 2018 02:04:18 +0900</lastBuildDate>
+    
+	<atom:link href="https://rgpkorea.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>RGP Tech Blog를 시작하며</title>
+      <link>https://rgpkorea.github.io/posts/start-as-rgp-tech-blog/</link>
+      <pubDate>Fri, 23 Feb 2018 02:04:18 +0900</pubDate>
+      
+      <guid>https://rgpkorea.github.io/posts/start-as-rgp-tech-blog/</guid>
+      <description>이제 7개월 째&amp;hellip; LG, 삼성, SK라는 전통적인 한국의 대기업에만 있다가 오게 된 이곳 RGP Korea. 지인들로부터 RGP Korea이면 RGP라는 본사가 어딘가에 있냐는 질문을 받기도 하고, 배달도 잘 안 시켜먹는 사람이 무슨 배달 서비스 스타트업에 가냐는 얘기를 듣기도 했다. 하지만, 이곳이 내가 그 전에 다녔던 큰 회사들보다 “지금 내가 하고 싶은 일들을 제대로 일 답게 할 수 있는 곳”이라는 믿음을 가졌고, 지금도 그 결정은 살아오면서 한 선택 중 가장 잘 한 일 중 하나라는 생각을 하고 있다.</description>
+    </item>
+    
+  </channel>
+</rss>
