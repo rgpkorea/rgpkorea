@@ -133,6 +133,8 @@ draft: true // false로 해야 실제 환경에서 볼 수 있습니다.
 
 # Deploy
 
+> 배포 전 노출 되어야 할 `.md`파일이 draft상태인지 먼저 확인 합니다. (각 파일의 meta 정보 영역에서 확인)
+
 ## Commit & Push
 변경사항을 commit하고 저장소로 push합니다.
 ```
