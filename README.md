@@ -67,6 +67,8 @@ git submodule update
 
 로컬에서 포스팅을 확인 해 보고, 새 포스팅을 디플로이 합니다.
 
+> 해당 설명은 Mac OS 위주로 작성되었습니다.
+
 ## Run Hugo Server
 
 휴고를 이용해 로컬에 간이 서버를 띄웁니다.
