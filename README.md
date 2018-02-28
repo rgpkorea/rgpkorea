@@ -41,3 +41,69 @@ git submodule init
 git submodule update
 ```
 
+# Start Hugo
+
+로컬에서 포스팅을 확인 해 보고, 새 포스팅을 디플로이 합니다.
+
+## Run Hugo Server
+
+휴고를 이용해 로컬에 간이 서버를 띄웁니다.
+
+```
+hugo serve -D
+```
+> 여기서 `-D`옵션은 Draft파일까지 보고 싶을 때 추가해 주는 옵션입니다.
+
+정상적으로 실행되고 나면 `http://localhost:1313`주소로 브라우져에서 접근 할 수 있습니다.
+
+기본적으로 라이브 리로드가 지원 되기 때문에, 소스 코드 수정 후 별도의 새로고침 없이 바로 반영되는 것을 확인 할 수 있습니다.
+
+> 최신 버전의 Hugo에서는 빠른 속도를 위해 소스 코드 전체를 다시 빌드 하지 않는 모드가 기본입니다. 
+>
+> 해제 하고 싶으면 `--disableFastRender` 옵션을 추가해 서버를 띄워 주세요.
+
+## Create New Post
+
+새 글을 작성하는 방법에는 다음의 두가지 방법이 있습니다.
+
+1. Hugo 명령어를 이용해 파일을 생성하는 방법.
+  > 일반 포스팅일 경우와 인터뷰일 경우의 경로가 서로 다름에 유의.
+2. md 파일을 해당 위치에 직접 복사하는 방법.
+  > 첫번째 방법으로 자동 생성시에 자동으로 입력되는 meta정보를 수동으로 입력해 주어야 함.
+
+### Hugo Command
+
+일반 포스팅
+```
+hugo new posts/my-first-post.md
+```
+인터뷰
+```
+hugo new interview/my-first-intervew.md
+```
+
+> **중요!!** 원하는 파일 명 뒤에 확장자 `.md`를 곡 붙여 주셔야 합니다!
+
+### Direct Copy
+
+`.md`파일을 각각의 경로에 복사합니다.
+
+| | 경로 |
+| - | :-: |
+| **일반 포스팅** | content/posts/ |
+| **인터뷰** | content/interview/ |
+
+`.md`파일의 최상단에 다음의 meta데이터를 추가 합니다.
+
+```
+---
+title: 제목
+description: 부제목
+author: 작성자
+image: post-bg.jpg // 인터뷰일 경우 interview-bg.jpg
+date: 2018-02-23T02:04:18+09:00
+type: post
+draft: true // false로 해야 실제 환경에서 볼 수 있습니다.
+---
+```
+
