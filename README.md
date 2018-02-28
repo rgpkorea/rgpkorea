@@ -7,12 +7,14 @@
 아래의 방법을 참고해 각 운영체제 별로 설치해 주세요.
 
 ## Mac
+
 [HomeBrew](https://brew.sh)를 이용해 설치
 ```
 brew install hugo
 ```
 
 ## Windows
+
 [Chocolatey](https://chocolatey.org/)를 이용해 설치
 ```
 choco install hugo -confirm
@@ -136,6 +138,7 @@ draft: true // false로 해야 실제 환경에서 볼 수 있습니다.
 > 배포 전 노출 되어야 할 `.md`파일이 draft상태인지 먼저 확인 합니다. (각 파일의 meta 정보 영역에서 확인)
 
 ## Commit & Push
+
 변경사항을 commit하고 저장소로 push합니다.
 ```
 git add .
