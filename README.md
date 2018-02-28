@@ -41,6 +41,28 @@ git submodule init
 git submodule update
 ```
 
+## 구조
+
+### Branch
+
+* **develop:** 기본 브랜치로 설정되어 있는 브랜치. 새 글추가 및 소스코드 수정 등은 전부 이 브랜치에서 수행 합니다.
+
+* **master:** 배포되고 나면 생성되는 static 파일들. 실제 깃헙 페이지가 바라보고 있는 브랜치이며, 일반적으로는 직접 수정 할 일이 없습니다.
+
+### Directory
+
+* **archetypes:** 포스팅 생성시 자동 입력되는 메타 정보를 설정하는 곳
+
+* **content:** 포스팅 될 `.md`파일들이 위치
+
+* **dist:** 배포시 master브랜치로 복사 될 내용이 임시로 저장되는 곳
+
+* **layouts:** 각종 화면을 구성하고 있는 html파일들이 위치
+
+* **static:** 이미지, 폰트, css, js 등, resource 성격의 파일들이 위치
+
+* **themes:** 서브모듈로 테마가 설치되어 있는 곳
+
 # Start Hugo
 
 로컬에서 포스팅을 확인 해 보고, 새 포스팅을 디플로이 합니다.
