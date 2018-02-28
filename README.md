@@ -131,3 +131,21 @@ draft: true // false로 해야 실제 환경에서 볼 수 있습니다.
 ---
 ```
 
+# Deploy
+
+## Commit & Push
+변경사항을 commit하고 저장소로 push합니다.
+```
+git add .
+git commit -am '변경된 내역'
+git push origin develop
+```
+
+## Run Deploy Script
+
+미리 작성되어 있는 스크립트 파일을 실행합니다.
+```
+sh deploy.sh
+```
+
+# 끗
