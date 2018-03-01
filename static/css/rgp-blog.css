@@ -254,31 +254,47 @@ hr.small {
 	padding: 0;
     }
     
+    article > div.container > div.row > div {
+	padding-left: 70px;
+	padding-right: 70px;
+    }
+    
+    footer > .container > .row > div {
+	padding-left: 70px;
+	padding-right: 70px;
+    }
+
 }
 
+@media (min-width: 992px) {
+    .container {
+	width: 1000px;
+    }    
+}
 
-@media only screen and (min-width: 768px) {
-    article > div.container > div.row > div {
-	padding-left: 50px;
-	padding-right: 50px;
+@media (min-width: 1200px) {
+    .container {
+	width: 1350px;
     }
+}
+
+@media (min-width: 1500px) {
+    .container {
+	width: 1600px;
+    }    
 }
 
 footer {
     background: #f3f3f3;
     border-top: solid 1px #e6e6e6;
     padding-bottom: 150px;
+    margin-top: 60px;
 }
 
 footer .copyright {
     text-align: left;
     color: #91969c;
     margin: 5px 0;
-}
-
-footer > .container > .row > div {
-    padding-left: 15px;
-    padding-right: 15px;
 }
 
 hr.list {
