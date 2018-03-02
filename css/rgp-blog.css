@@ -1,6 +1,6 @@
 body {
     font-family: 'NanumSquare';
-    font-size: 16px;
+    font-size: 17px;
     color: #404346;
 }
 
@@ -14,6 +14,30 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
     font-family: 'NanumSquare';
+}
+
+h1 {
+    font-size: 32px;
+}
+
+h2 {
+    font-size: 28px;
+}
+
+h3 {
+    font-size: 24px;
+}
+
+h4 {
+    font-size: 22px;
+}
+
+h5 {
+    font-size: 20px;
+}
+
+h6 {
+    font-size: 18px;
 }
 
 p {
@@ -143,9 +167,6 @@ a.navbar-brand>span {
     margin-top: 22px;
 }
 
-/* .post-preview>a:hover, .post-preview>a:focus { */
-/*     color: #ff333a !important; */
-/* } */
 
 /* contents */
 
@@ -183,21 +204,24 @@ hr.small {
     color: #fff;
     margin-top: 40px;
     margin-bottom: 22px;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .intro-header .post-heading .subheading {
     font-family: 'NanumSquare';
-    font-weight: 300;
+    font-weight: 500;
     margin: 25px 0 30px 0;
     color: #fff;
     font-size: 20px;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 .intro-header .post-heading .meta {
     font-family: 'NanumSquare';
     font-style: normal;
-    font-size: 13px;
+    font-size: 14px;
     color: #fff;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .intro-header .post-heading .meta a {
@@ -208,7 +232,15 @@ article .container img {
   width: 100%;
 }
 
+article .container {
+    padding: 30px;
+}
+
 @media only screen and (min-width: 768px) {
+
+    article {
+	padding-top: 0px;
+    }
 
     .intro-header .post-heading hr.small {
 	border-color: #ff333a;
@@ -232,8 +264,8 @@ article .container img {
     }
 
     .intro-header .post-heading h1 {
-	font-size: 32px;
 	color: #212529;
+	font-size: 32px;
     }
 
     .intro-header .post-heading hr.small {
@@ -243,6 +275,8 @@ article .container img {
     .intro-header .post-heading .subheading {
 	font-size: 18px;
 	color: #404346;
+	font-weight: 300;
+	text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     }
 
     .intro-header .post-heading .meta {
@@ -257,12 +291,16 @@ article .container img {
 	padding: 0;
     }
 
+    article .container {
+	padding: 0;
+    }
+
     article > div.container > div.row > div {
 	padding-left: 70px;
 	padding-right: 70px;
     }
 
-    footer > .container > .row > div {
+    footer.footer-post > .container > .row > div {
 	padding-left: 70px;
 	padding-right: 70px;
     }
@@ -276,12 +314,24 @@ article .container img {
 }
 
 @media (min-width: 1200px) {
+    
+    article > div.container > div.row > div {
+	padding-left: 80px;
+	padding-right: 80px;
+    }
+    
     .container {
 	width: 1350px;
     }
 }
 
 @media (min-width: 1500px) {
+    
+    article > div.container > div.row > div {
+	padding-left: 80px;
+	padding-right: 80px;
+    }
+    
     .container {
 	width: 1600px;
     }
