@@ -64,7 +64,7 @@ a.navbar-brand>span {
     .navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover {
 	color: rgba(255, 255, 255, .8)
     }
-    
+
     .navbar .logo {
 	display: block;
     }
@@ -72,7 +72,7 @@ a.navbar-brand>span {
     .navbar .logo-color {
 	display: none;
     }
-    
+
     .navbar.is-fixed .logo {
 	display: none;
     }
@@ -80,7 +80,7 @@ a.navbar-brand>span {
     .navbar.is-fixed .logo-color {
 	display: block;
     }
-   
+
     .navbar-custom .navbar-brand {
 	padding: 16px 15px;
     }
@@ -106,7 +106,7 @@ a.navbar-brand>span {
 }
 
 .navbar-custom {
-    font-family: 'NanumSquare';    
+    font-family: 'NanumSquare';
 }
 
 
@@ -204,17 +204,20 @@ hr.small {
     color: #fff;
 }
 
+article .container img {
+  width: 100%;
+}
 
 @media only screen and (min-width: 768px) {
-    
+
     .intro-header .post-heading hr.small {
 	border-color: #ff333a;
     }
-    
+
     .intro-header .site-heading, .intro-header .page-heading {
 	padding-top: 150px;
     }
-    
+
     .intro-header .site-heading h1, .intro-header .page-heading h1 {
 	font-size: 70px;
     }
@@ -227,7 +230,7 @@ hr.small {
 	margin-top: 100px;
 	background: #fff;
     }
-    
+
     .intro-header .post-heading h1 {
 	font-size: 32px;
 	color: #212529;
@@ -245,7 +248,7 @@ hr.small {
     .intro-header .post-heading .meta {
 	color: #91969c;
     }
-    
+
     .intro-header .post-heading .meta a {
 	color: #91969c;
     }
@@ -253,12 +256,12 @@ hr.small {
     .container {
 	padding: 0;
     }
-    
+
     article > div.container > div.row > div {
 	padding-left: 70px;
 	padding-right: 70px;
     }
-    
+
     footer > .container > .row > div {
 	padding-left: 70px;
 	padding-right: 70px;
@@ -269,7 +272,7 @@ hr.small {
 @media (min-width: 992px) {
     .container {
 	width: 1000px;
-    }    
+    }
 }
 
 @media (min-width: 1200px) {
@@ -281,7 +284,7 @@ hr.small {
 @media (min-width: 1500px) {
     .container {
 	width: 1600px;
-    }    
+    }
 }
 
 footer {

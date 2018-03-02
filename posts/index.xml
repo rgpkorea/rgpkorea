@@ -7,10 +7,32 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-KR</language>
     <copyright>Copyright © RGP Korea. All Rights Reserved.</copyright>
-    <lastBuildDate>Fri, 23 Feb 2018 02:04:18 +0900</lastBuildDate>
+    <lastBuildDate>Fri, 02 Mar 2018 11:29:18 +0900</lastBuildDate>
     
 	<atom:link href="https://rgpkorea.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>요기요 Android 팀의 Git Branch와 Release Planning</title>
+      <link>https://rgpkorea.github.io/posts/ygy-android-release-planning/</link>
+      <pubDate>Fri, 02 Mar 2018 11:29:18 +0900</pubDate>
+      
+      <guid>https://rgpkorea.github.io/posts/ygy-android-release-planning/</guid>
+      <description>RGP Korea는 요기요/배달통을 함께 서비스 중이다. 본 포스팅에서는 필자가 담당하고 있는 요기요 서비스의 GitHub Branch 운영 방법을 소개하려고 한다.
+요기요 안드로이드 팀의 Git Branch는 아래와 같이 운영하고 있다.
+ Master : Release 완료한 버전을 merge 하고, Release 완료 시 Tag를 함께 둔다. Developer Branch : Master Branch 기준으로 티켓 단위 개발 작업을 진행하며, 필요에 따라서 타 Developer Branch를 Merge 한다. Release Branch : 릴리즈 플래닝이 끝나면 작업 완료한 티켓을 머지 한다.</description>
+    </item>
+    
+    <item>
+      <title>요기요는 Kotlin을 어떻게 적용했나?</title>
+      <link>https://rgpkorea.github.io/posts/how-did-yogiyo-apply-kotlin/</link>
+      <pubDate>Fri, 02 Mar 2018 10:29:18 +0900</pubDate>
+      
+      <guid>https://rgpkorea.github.io/posts/how-did-yogiyo-apply-kotlin/</guid>
+      <description>RGP Korea는 &amp;lsquo;요기요&amp;rsquo;와 &amp;lsquo;배달통&amp;rsquo;을 함께 운영중이다. 이 중 필자가 담당하고 있는 요기요 서비스에 최근 Java와 Kotlin을 함께 사용하고 있다. 요기요 앱에 현재까지 약 14%의 Kotlin을 적용한 상태인데, 왜 도입하게 되었으며, 러닝 커브의 해결은 어떻게 했는지 정리하려 한다.
+
+Kotlin Kotlin은 JetBrain 사에서 2011년 첫 발표된 후 2016년 1.0 정식 버전이 배포되었고, 현재 1.1.60 버전이 배포 중이다. 2011년 이후 5년이라는 시간을 통해 안정화가 진행되어, 현재 Kotlin은 Java 대신 실 개발에 사용하기 딱 좋은 상태로 안정화되어 있다.</description>
+    </item>
     
     <item>
       <title>RGP Tech Blog를 시작하며</title>

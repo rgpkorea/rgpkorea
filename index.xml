@@ -7,10 +7,32 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-KR</language>
     <copyright>Copyright © RGP Korea. All Rights Reserved.</copyright>
-    <lastBuildDate>Fri, 23 Feb 2018 02:04:18 +0900</lastBuildDate>
+    <lastBuildDate>Fri, 02 Mar 2018 11:29:18 +0900</lastBuildDate>
     
 	<atom:link href="https://rgpkorea.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>요기요 Android 팀의 Git Branch와 Release Planning</title>
+      <link>https://rgpkorea.github.io/posts/ygy-android-release-planning/</link>
+      <pubDate>Fri, 02 Mar 2018 11:29:18 +0900</pubDate>
+      
+      <guid>https://rgpkorea.github.io/posts/ygy-android-release-planning/</guid>
+      <description>RGP Korea는 요기요/배달통을 함께 서비스 중이다. 본 포스팅에서는 필자가 담당하고 있는 요기요 서비스의 GitHub Branch 운영 방법을 소개하려고 한다.
+요기요 안드로이드 팀의 Git Branch는 아래와 같이 운영하고 있다.
+ Master : Release 완료한 버전을 merge 하고, Release 완료 시 Tag를 함께 둔다. Developer Branch : Master Branch 기준으로 티켓 단위 개발 작업을 진행하며, 필요에 따라서 타 Developer Branch를 Merge 한다. Release Branch : 릴리즈 플래닝이 끝나면 작업 완료한 티켓을 머지 한다.</description>
+    </item>
+    
+    <item>
+      <title>요기요는 Kotlin을 어떻게 적용했나?</title>
+      <link>https://rgpkorea.github.io/posts/how-did-yogiyo-apply-kotlin/</link>
+      <pubDate>Fri, 02 Mar 2018 10:29:18 +0900</pubDate>
+      
+      <guid>https://rgpkorea.github.io/posts/how-did-yogiyo-apply-kotlin/</guid>
+      <description>RGP Korea는 &amp;lsquo;요기요&amp;rsquo;와 &amp;lsquo;배달통&amp;rsquo;을 함께 운영중이다. 이 중 필자가 담당하고 있는 요기요 서비스에 최근 Java와 Kotlin을 함께 사용하고 있다. 요기요 앱에 현재까지 약 14%의 Kotlin을 적용한 상태인데, 왜 도입하게 되었으며, 러닝 커브의 해결은 어떻게 했는지 정리하려 한다.
+
+Kotlin Kotlin은 JetBrain 사에서 2011년 첫 발표된 후 2016년 1.0 정식 버전이 배포되었고, 현재 1.1.60 버전이 배포 중이다. 2011년 이후 5년이라는 시간을 통해 안정화가 진행되어, 현재 Kotlin은 Java 대신 실 개발에 사용하기 딱 좋은 상태로 안정화되어 있다.</description>
+    </item>
     
     <item>
       <title>RGP Tech Blog를 시작하며</title>
@@ -28,7 +50,9 @@
       
       <guid>https://rgpkorea.github.io/interview/pro-studier-kdu-lsy/</guid>
       <description>About Pair Interview 알지피 기술 블로그에서는 의미있는 인터뷰 테마를 선정하고, 테마에 어울리는 엔지니어 두 분을 Pair로 초대하여 흥미로운 이야기를 싣고 있습니다.
-첫 번째 테마: 배움 안녕하세요, 기술 블로그 에디터를 맡고 있는 김나리 (a.k.a Scrum Master)입니다. 첫 인터뷰 대상자로 초대소환되신 요기요 개발자 동욱님&amp;amp;수용님과 함께 두 분의 &amp;lsquo;배움&amp;rsquo;에 대한 이야기를 들어볼까 합니다. 두 분을 Pair로 초대한 결정적인 이유가 &amp;lsquo;고기&amp;rsquo;에 대한 남다른 애정과 배움을 즐길 줄 아는 모습이 비슷하기 때문인데요, 배달음식 앱 개발이 주업인 만큼, 먼저 고기 얘기부터 시작해볼까요?</description>
+첫 번째 테마: 배움  (좌) 김동욱 / 요기요 서버 개발 엔지니어: 마들렌 잘 굽는 개발자, 그의 베이킹을 응원하며 제빵모자를 선물로 드림
+(우) 임수용 / 요기요 iOS 앱 개발 엔지니어: 클라이밍 4개월차, 선물로 드린 초크백 인증. 프로의 느낌!
+ 안녕하세요, 기술 블로그 에디터를 맡고 있는 김나리 (a.k.a Scrum Master)입니다.</description>
     </item>
     
   </channel>
