@@ -236,10 +236,10 @@ Kotlin이라는 언어 자체가 주는 생산성은 높다고 생각한다. 처
 
 권태환, YGY Client team @RGP Korea
 
-[kotlin-01]: images/how-did-yogiyo-apply-kotlin/kotlin-01.jpg
-[maxresdefault]: images/how-did-yogiyo-apply-kotlin/maxresdefault.jpg
+[kotlin-01]: ../images/how-did-yogiyo-apply-kotlin/kotlin-01.jpg
+[maxresdefault]: ../images/how-did-yogiyo-apply-kotlin/maxresdefault.jpg
 
-[ygy-android]: images/how-did-yogiyo-apply-kotlin/ygy-android.png
-[ygy-android-owner]: images/how-did-yogiyo-apply-kotlin/ygy-android-owner.png
+[ygy-android]: ../images/how-did-yogiyo-apply-kotlin/ygy-android.png
+[ygy-android-owner]: ../images/how-did-yogiyo-apply-kotlin/ygy-android-owner.png
 
-[list]: images/how-did-yogiyo-apply-kotlin/list.jpg
+[list]: ../images/how-did-yogiyo-apply-kotlin/list.jpg

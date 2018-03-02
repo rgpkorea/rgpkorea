@@ -179,4 +179,4 @@ Code Review는 중간중간 진행하기 때문에 아래 그림에 포함하지
 권태환, YGY Client team @RGP Korea
 
 
-[git-flow]: images/ygy-android-release-planning/git-flow.png
+[git-flow]: ../images/ygy-android-release-planning/git-flow.png
