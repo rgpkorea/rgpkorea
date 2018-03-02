@@ -1,0 +1,40 @@
+    <!-- Footer -->
+    <footer class="footer-post">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                  <ul class="list-inline">
+                    <li>
+                      <a href="https://rgpkorea.recruiter.co.kr" target="_blank">
+			  Career
+                      </a>
+                    </li>
+		    <li>
+		      <span>&#124;</span>
+		    </li>
+                    <li>
+                      <a href="https://www.deliveryhero.com" target="_blank">
+			  Delivery Hero Global Network
+                      </a>
+                    </li>
+                  </ul>
+                  <p class="copyright text-muted">{{ .Site.Copyright }}</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- jQuery -->
+    <script src="{{ .Site.BaseURL }}/js/jquery.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="{{ .Site.BaseURL }}/js/bootstrap.min.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="{{ .Site.BaseURL }}/js/clean-blog.js"></script>
+
+    {{ template "_internal/google_analytics.html" . }}
+
+</body>
+
+</html>
