@@ -58,9 +58,9 @@ a:hover, a:focus {
 }
 
 a.navbar-brand>span {
-    width: 114px;
-    height: 27px;
-    background-size: 114px 27px;
+    width: 106px;
+    height: 23.5px;
+    background-size: 106px 23.5px;
 }
 
 .navbar .logo {
@@ -71,9 +71,8 @@ a.navbar-brand>span {
     display: block;
 }
 
-
 .navbar-custom .navbar-brand {
-    padding: 12px 15px;
+    padding: 16px 15px;
 }
 
 .navbar-default .navbar-nav>li>a {
@@ -119,9 +118,14 @@ a.navbar-brand>span {
 }
 
 .navbar-default .navbar-toggle .menu {
-    width: 16px;
-    height: 11px;
+    width: 25px;
+    height: 16.5px;
+    background-size: 25px 16.5px;
     display: block;
+}
+
+.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+    background: none;
 }
 
 .navbar-toggle {
@@ -165,6 +169,7 @@ a.navbar-brand>span {
     color: #91969c;
     font-weight: 400;
     margin-top: 22px;
+    font-size: 16px;
 }
 
 
@@ -221,7 +226,7 @@ hr.small {
     font-style: normal;
     font-size: 14px;
     color: #fff;
-    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 .intro-header .post-heading .meta a {
@@ -266,6 +271,7 @@ article .container {
     .intro-header .post-heading h1 {
 	color: #212529;
 	font-size: 32px;
+	text-shadow: none;
     }
 
     .intro-header .post-heading hr.small {
@@ -276,11 +282,12 @@ article .container {
 	font-size: 18px;
 	color: #404346;
 	font-weight: 300;
-	text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+	text-shadow: none;
     }
 
     .intro-header .post-heading .meta {
 	color: #91969c;
+	text-shadow: none;
     }
 
     .intro-header .post-heading .meta a {
