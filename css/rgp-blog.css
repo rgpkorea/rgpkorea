@@ -119,8 +119,8 @@ a.navbar-brand>span {
 
 .navbar-default .navbar-toggle .menu {
     width: 25px;
-    height: 16.5px;
-    background-size: 25px 16.5px;
+    height: 16px;
+    background-size: 25px 16px;
     display: block;
 }
 
