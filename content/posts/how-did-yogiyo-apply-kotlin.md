@@ -6,6 +6,7 @@ image: post-bg.jpg
 date: 2018-03-02T10:29:18+09:00
 type: post
 draft: false
+comments: true
 ---
 
 RGP Korea는 '요기요'와 '배달통'을 함께 운영중이다. 이 중 필자가 담당하고 있는 요기요 서비스에 최근 Java와 Kotlin을 함께 사용하고 있다. 요기요 앱에 현재까지 약 14%의 Kotlin을 적용한 상태인데, 왜 도입하게 되었으며, 러닝 커브의 해결은 어떻게 했는지 정리하려 한다.

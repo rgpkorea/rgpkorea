@@ -18,6 +18,9 @@
     <link href="{{ .RSSLink }}" rel="feed" type="application/rss+xml" title="{{ .Site.Title }}" />
     {{ end }}
 
+    <!-- Open Graph -->
+    {{ if .Site.Params.opengraph }}{{ partial "opengraph.html" . }}{{ end }}
+
     <!-- Bootstrap Core CSS -->
     <link href="{{ .Site.BaseURL }}/css/bootstrap.min.css" rel="stylesheet">
 

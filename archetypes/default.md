@@ -6,4 +6,5 @@ image: {{ if in .Dir "posts" }}post-bg.jpg{{ else if in .Dir "interview" }}inter
 date: {{ .Date }}
 type: post
 draft: true
+comments: true
 ---

@@ -6,6 +6,7 @@ author: 김나리
 image: interview-bg.jpg
 type: post
 draft: false
+comments: true
 ---
 
 ## About Pair Interview

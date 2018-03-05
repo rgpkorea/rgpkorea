@@ -6,6 +6,7 @@ image: post-bg.jpg
 date: 2018-03-02T11:29:18+09:00
 type: post
 draft: false
+comments: true
 ---
 
 RGP Korea는 요기요/배달통을 함께 서비스 중이다. 본 포스팅에서는 필자가 담당하고 있는 요기요 서비스의 GitHub Branch 운영 방법을 소개하려고 한다.
