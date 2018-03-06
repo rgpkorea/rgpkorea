@@ -1,6 +1,6 @@
 ---
 title: 요기요는 Kotlin을 어떻게 적용했나?
-description: 요기요의 Kotlin 적용 과정과 Learning Curve
+description: 요기요 서비스의 Kotlin 적용 과정과 Learning Curve
 author: 권태환
 image: post-bg.jpg
 date: 2018-03-02T10:00:00+00:00

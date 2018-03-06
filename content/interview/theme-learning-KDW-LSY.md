@@ -1,6 +1,6 @@
 ---
 title: "[Pair Interview] #프로배움러"
-date: 2018-02-23T01:46:54+09:00
+date: 2018-03-02T10:02:00+00:00
 description: "요기요 개발자 김동욱 & 임수용 편"
 author: 김나리
 image: interview-bg.jpg
