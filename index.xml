@@ -24,6 +24,18 @@
     </item>
     
     <item>
+      <title>[Pair Interview] #프로배움러</title>
+      <link>https://rgpkorea.github.io/interview/theme-learning-kdw-lsy/</link>
+      <pubDate>Fri, 02 Mar 2018 10:02:00 +0000</pubDate>
+      
+      <guid>https://rgpkorea.github.io/interview/theme-learning-kdw-lsy/</guid>
+      <description>About Pair Interview 알지피 기술 블로그에서는 의미있는 인터뷰 테마를 선정하고, 테마에 어울리는 엔지니어 두 분을 Pair로 초대하여 흥미로운 이야기를 싣고 있습니다.
+첫 번째 테마: 배움  (좌) 김동욱 / 요기요 서버 개발 엔지니어: 마들렌 잘 굽는 개발자, 그의 베이킹을 응원하며 제빵모자를 선물로 드림
+(우) 임수용 / 요기요 iOS 앱 개발 엔지니어: 클라이밍 4개월차, 선물로 드린 초크백 인증. 프로의 느낌!
+ 안녕하세요, 기술 블로그 에디터를 맡고 있는 김나리 (a.k.a Scrum Master)입니다.</description>
+    </item>
+    
+    <item>
       <title>시니어 개발자 역할에 대한 고찰</title>
       <link>https://rgpkorea.github.io/posts/thoughts-senior-developer/</link>
       <pubDate>Fri, 02 Mar 2018 10:01:00 +0000</pubDate>
@@ -51,18 +63,6 @@ Kotlin Kotlin은 JetBrain 사에서 2011년 첫 발표된 후 2016년 1.0 정식
       
       <guid>https://rgpkorea.github.io/posts/start_rgp_tech_blog/</guid>
       <description>이제 7개월 째&amp;hellip; LG, 삼성, SK라는 전통적인 한국의 대기업에만 있다가 오게 된 이곳 RGP Korea. 지인들로부터 RGP Korea이면 RGP라는 본사가 어딘가에 있냐는 질문을 받기도 하고, 배달도 잘 안 시켜먹는 사람이 무슨 배달 서비스 스타트업에 가냐는 얘기를 듣기도 했다. 하지만, 이곳이 내가 그 전에 다녔던 큰 회사들보다 “지금 내가 하고 싶은 일들을 제대로 일 답게 할 수 있는 곳”이라는 믿음을 가졌고, 지금도 그 결정은 살아오면서 한 선택 중 가장 잘 한 일 중 하나라는 생각을 하고 있다.</description>
-    </item>
-    
-    <item>
-      <title>[Pair Interview] #프로배움러</title>
-      <link>https://rgpkorea.github.io/interview/pro-studier-kdu-lsy/</link>
-      <pubDate>Fri, 23 Feb 2018 01:46:54 +0900</pubDate>
-      
-      <guid>https://rgpkorea.github.io/interview/pro-studier-kdu-lsy/</guid>
-      <description>About Pair Interview 알지피 기술 블로그에서는 의미있는 인터뷰 테마를 선정하고, 테마에 어울리는 엔지니어 두 분을 Pair로 초대하여 흥미로운 이야기를 싣고 있습니다.
-첫 번째 테마: 배움  (좌) 김동욱 / 요기요 서버 개발 엔지니어: 마들렌 잘 굽는 개발자, 그의 베이킹을 응원하며 제빵모자를 선물로 드림
-(우) 임수용 / 요기요 iOS 앱 개발 엔지니어: 클라이밍 4개월차, 선물로 드린 초크백 인증. 프로의 느낌!
- 안녕하세요, 기술 블로그 에디터를 맡고 있는 김나리 (a.k.a Scrum Master)입니다.</description>
     </item>
     
   </channel>
