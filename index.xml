@@ -7,25 +7,15 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-KR</language>
     <copyright>Copyright © RGP Korea. All Rights Reserved.</copyright>
-    <lastBuildDate>Mon, 05 Mar 2018 12:16:43 +0900</lastBuildDate>
+    <lastBuildDate>Fri, 02 Mar 2018 10:05:00 +0000</lastBuildDate>
     
 	<atom:link href="https://rgpkorea.github.io/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>시니어 개발자 역할에 대한 고찰</title>
-      <link>https://rgpkorea.github.io/posts/consider-of-sr-developer/</link>
-      <pubDate>Mon, 05 Mar 2018 12:16:43 +0900</pubDate>
-      
-      <guid>https://rgpkorea.github.io/posts/consider-of-sr-developer/</guid>
-      <description>프롤로그 안녕하세요, RGP Korea에서 서버 개발 팀장을 맡고 있는 김법중이라고 합니다. 회사 생활을 하다 보면 자주, 그리고 자연스럽게 구성원 개개인을 판단하고 구분 짓는 목적으로 사용하는 단어들이 존재하는데, 오늘은 그 중에 하나인 주니어/시니어에 대한 이야기를 하고자 합니다.
-이 주제로 글을 쓰게 된 계기는, 최근 하나의 팀으로서는 적지 않은 규모의 팀원들을 리딩하게 되었기 때문입니다. 팀원을 충원하던 차에 다양한 의견을 접하다 보니 개개인이 생각하는 바가 다름을 깨달았고, 그 과정을 정리를 하면서 느끼게 된 바가 컸습니다.</description>
-    </item>
-    
-    <item>
-      <title>요기요 Android 팀의 Git Branch와 Release Planning</title>
+      <title>요기요 Android 개발 Git Branch와 Release Planning</title>
       <link>https://rgpkorea.github.io/posts/ygy-android-release-planning/</link>
-      <pubDate>Fri, 02 Mar 2018 11:29:18 +0900</pubDate>
+      <pubDate>Fri, 02 Mar 2018 10:05:00 +0000</pubDate>
       
       <guid>https://rgpkorea.github.io/posts/ygy-android-release-planning/</guid>
       <description>RGP Korea는 요기요/배달통을 함께 서비스 중이다. 본 포스팅에서는 필자가 담당하고 있는 요기요 서비스의 GitHub Branch 운영 방법을 소개하려고 한다.
@@ -34,11 +24,21 @@
     </item>
     
     <item>
-      <title>요기요는 Kotlin을 어떻게 적용했나?</title>
-      <link>https://rgpkorea.github.io/posts/how-did-yogiyo-apply-kotlin/</link>
-      <pubDate>Fri, 02 Mar 2018 10:29:18 +0900</pubDate>
+      <title>시니어 개발자 역할에 대한 고찰</title>
+      <link>https://rgpkorea.github.io/posts/thoughts-senior-developer/</link>
+      <pubDate>Fri, 02 Mar 2018 10:01:00 +0000</pubDate>
       
-      <guid>https://rgpkorea.github.io/posts/how-did-yogiyo-apply-kotlin/</guid>
+      <guid>https://rgpkorea.github.io/posts/thoughts-senior-developer/</guid>
+      <description>프롤로그 안녕하세요, RGP Korea에서 서버 개발 팀장을 맡고 있는 김법중이라고 합니다. 회사 생활을 하다 보면 자주, 그리고 자연스럽게 구성원 개개인을 판단하고 구분 짓는 목적으로 사용하는 단어들이 존재하는데, 오늘은 그 중에 하나인 주니어/시니어에 대한 이야기를 하고자 합니다.
+이 주제로 글을 쓰게 된 계기는, 최근 하나의 팀으로서는 적지 않은 규모의 팀원들을 리딩하게 되었기 때문입니다. 팀원을 충원하던 차에 다양한 의견을 접하다 보니 개개인이 생각하는 바가 다름을 깨달았고, 그 과정을 정리를 하면서 느끼게 된 바가 컸습니다.</description>
+    </item>
+    
+    <item>
+      <title>요기요는 Kotlin을 어떻게 적용했나?</title>
+      <link>https://rgpkorea.github.io/posts/yogiyo-kotlin/</link>
+      <pubDate>Fri, 02 Mar 2018 10:00:00 +0000</pubDate>
+      
+      <guid>https://rgpkorea.github.io/posts/yogiyo-kotlin/</guid>
       <description>RGP Korea는 &amp;lsquo;요기요&amp;rsquo;와 &amp;lsquo;배달통&amp;rsquo;을 함께 운영중이다. 이 중 필자가 담당하고 있는 요기요 서비스에 최근 Java와 Kotlin을 함께 사용하고 있다. 요기요 앱에 현재까지 약 14%의 Kotlin을 적용한 상태인데, 왜 도입하게 되었으며, 러닝 커브의 해결은 어떻게 했는지 정리하려 한다.
 
 Kotlin Kotlin은 JetBrain 사에서 2011년 첫 발표된 후 2016년 1.0 정식 버전이 배포되었고, 현재 1.1.60 버전이 배포 중이다. 2011년 이후 5년이라는 시간을 통해 안정화가 진행되어, 현재 Kotlin은 Java 대신 실 개발에 사용하기 딱 좋은 상태로 안정화되어 있다.</description>
@@ -46,10 +46,10 @@ Kotlin Kotlin은 JetBrain 사에서 2011년 첫 발표된 후 2016년 1.0 정식
     
     <item>
       <title>RGP Tech Blog를 시작하며</title>
-      <link>https://rgpkorea.github.io/posts/start-as-rgp-tech-blog/</link>
-      <pubDate>Fri, 23 Feb 2018 02:04:18 +0900</pubDate>
+      <link>https://rgpkorea.github.io/posts/start_rgp_tech_blog/</link>
+      <pubDate>Fri, 02 Mar 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://rgpkorea.github.io/posts/start-as-rgp-tech-blog/</guid>
+      <guid>https://rgpkorea.github.io/posts/start_rgp_tech_blog/</guid>
       <description>이제 7개월 째&amp;hellip; LG, 삼성, SK라는 전통적인 한국의 대기업에만 있다가 오게 된 이곳 RGP Korea. 지인들로부터 RGP Korea이면 RGP라는 본사가 어딘가에 있냐는 질문을 받기도 하고, 배달도 잘 안 시켜먹는 사람이 무슨 배달 서비스 스타트업에 가냐는 얘기를 듣기도 했다. 하지만, 이곳이 내가 그 전에 다녔던 큰 회사들보다 “지금 내가 하고 싶은 일들을 제대로 일 답게 할 수 있는 곳”이라는 믿음을 가졌고, 지금도 그 결정은 살아오면서 한 선택 중 가장 잘 한 일 중 하나라는 생각을 하고 있다.</description>
     </item>
     
