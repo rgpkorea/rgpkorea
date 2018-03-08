@@ -1,9 +1,9 @@
 ---
 title: 요기요는 Kotlin을 어떻게 적용했나?
-description: 요기요는 Kotlin을 어떻게 적용했나?
+description: 요기요 서비스의 Kotlin 적용 과정과 Learning Curve
 author: 권태환
 image: post-bg.jpg
-date: 2018-03-02T10:29:18+09:00
+date: 2018-03-02T10:00:00+00:00
 type: post
 draft: false
 comments: true
@@ -235,7 +235,7 @@ Kotlin이라는 언어 자체가 주는 생산성은 높다고 생각한다. 처
 결국 함께 할 사람을 잘 설득해서 더 좋은 방향으로 이끌 수 있어야 하겠지만...
 
 
-권태환, YGY Client team @RGP Korea
+권태환, 요기요 클라이언트개발 엔지니어 @RGP Korea
 
 [kotlin-01]: ../images/how-did-yogiyo-apply-kotlin/kotlin-01.jpg
 [maxresdefault]: ../images/how-did-yogiyo-apply-kotlin/maxresdefault.jpg

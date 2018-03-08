@@ -1,9 +1,9 @@
 ---
-title: 요기요 Android 팀의 Git Branch와 Release Planning
-description: 요기요 Android 팀의 Git Branch와 Release Planning
+title: 요기요 Android 개발 Git Branch와 Release Planning
+description: 요기요 서비스의 GitHub Branch 운영 방법
 author: 권태환
 image: post-bg.jpg
-date: 2018-03-02T11:29:18+09:00
+date: 2018-03-02T10:05:00+00:00
 type: post
 draft: false
 comments: true
@@ -177,7 +177,7 @@ Code Review는 중간중간 진행하기 때문에 아래 그림에 포함하지
 
 이 방법으로 작업하는 건 분명한 장/단점이 있지만 어느 정도 안정화되었다면 여러분도 도전해볼 수 있을 법 하다. 다만 위에서 이렇게 하는 걸 어느 정도 인정해줘야겠지만 말이다...
 
-권태환, YGY Client team @RGP Korea
+권태환, 요기요 클라이언트 개발 엔지니어 @RGP Korea
 
 
 [git-flow]: ../images/ygy-android-release-planning/git-flow.png
