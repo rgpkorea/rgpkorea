@@ -6,7 +6,7 @@ title = "RGP Tech Blog"
 theme = "startbootstrap-clean-blog"
 publishdir = "dist"
 copyright = "Copyright © RGP Korea. All Rights Reserved."
-disqusShortname = "RGP Tech Blog"
+disqusShortname = "rgp-tech-blog"
 googleAnalytics = "UA-115391384-1"
 
 [Taxonomies]
