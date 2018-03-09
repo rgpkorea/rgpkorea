@@ -32,21 +32,22 @@ RGP Korea는 '요기요'와 '배달통'을 함께 운영중이다. 이 중 필�
 
 ## 요기요에 Kotlin 적용하기
 
-다음의 과정이 필요하였다.
+다음의 3가지 과정을 정리해본다.
 
-- 설득
-- 적용
-- 러닝 커브는 어떻게 할 것인가?
+1. 설득
+2. 적용
+3. 러닝 커브는 어떻게 할 것인가?
 
-1. 설득<br>
+<br />
+
+1. 설득<br />
 설득은 생각보다 쉬웠다. Google I/O 이후에 적용을 하였기에 아주 쉽게 설득할 수 있었다. 그전에는 요기요 사장님 앱 (요기요 사장님들을 위한 주문 접수 앱)에서만 하기로 하였으나, Google I/O로 인해 일반 사용자 대상의 요기요 앱에서도 적용할 수 있게 되었다.
 그리고 필자가 이미 Kotlin을 학습한 상태였기에 안정성 검증에 대한 부담감을 가지고 생산성을 선택했다. Kotlin을 6개월 정도 실 프로젝트에 적용하고 있는데, Java보다는 높은 생산성을 유지하고 있다.
-다만 NullPointerException을 피하는 기법을 제공하고 있는데, 일부 실수로 인해 초반에 NullPointerException이 많았었다.
+다만 NullPointerException을 피하는 기법을 제공하고 있는데, 일부 실수로 인해 초반에 NullPointerException이 많았었다.<br /><br />
+2. 적용<br />
+처음 시작한 부분은 Google I/O 이전에 작업했던 클래스 하나를 Java to Kotlin으로 Convert 하는 과정을 거쳤다. 길지 않은 ViewModel로써 딱 하나만 처리하도록 역할을 구분해둔 상태였다. 그래서 어렵지 않게 작업하였다. 일단 필자가 먼저 프로젝트에 Kotlin을 적용하였다.<br /><br />
 
-2. 적용<br>
-처음 시작한 부분은 Google I/O 이전에 작업했던 클래스 하나를 Java to Kotlin으로 Convert 하는 과정을 거쳤다. 길지 않은 ViewModel로써 딱 하나만 처리하도록 역할을 구분해둔 상태였다. 그래서 어렵지 않게 작업하였다. 일단 필자가 먼저 프로젝트에 Kotlin을 적용하였다.
-
-3. 러닝 커브는 어떻게 할 것인가?<br>
+3. 러닝 커브는 어떻게 할 것인가?<br />
 필자가 혼자서 적용할 수 있긴 하다. 하지만 함께하는 팀원과 팀장님도 이를 적용해야 한다. 다행히도 팀 내에서는 Kotlin에 대한 관심을 가지고 있어 조금이라도 학습한 상태였다. 그리고 웹을 하신 팀장님은 어렵지 않게 Kotlin을 적용하셨고, 오히려 필자보다 큰 문제없이 사용하였다. 오히려 필자는 1년이라는 시간 동안 겪어보지 못한 오류들을 경험하였고, 더 좋은 문법들로 나가는 방법도 터득하였다.
 
 생각보다 간단하게 설득하였고, 적용할 수 있었다. 어떤 것이든 새로운 부분을 적용하는데 있어서 학습 비용은 발생한다. 그 학습 비용은 얼마나 관심을 가지고 하느냐인데 필자가 생각하기엔 회사에서 적용하는 것만큼 좋은 것은 없는 것 같다는 생각이다. 집에 가면 공부를 하지않으니 있는 시간에라도 최대로 학습하는 게 필요한 것이다.
@@ -71,7 +72,7 @@ Google I/O 세션 중 [Pinterest - Christina Lee](https://events.google.com/io/s
 
 ## NullPointerException 발생
 
-아무리 1년 동안 공부를 했다고 하더라도, NullPointerException가 발생해버렸다. NPE을 줄이려고 Kotlin의 장점을 활용해야 하는데 다음을 간과해버렸다.
+아무리 1년 동안 공부를 했다고 하더라도, `NPE(NullPointerException)`가 발생해버렸다. `NPE(NullPointerException)`을 줄이려고 Kotlin 장점을 활용해야 하는데 다음을 간과해버렸다.
 
 - Java : 언제나 null을 가질 수 있는 변수를 만들 수 있다
 - Kotlin : 기본은 Nullable을 허용하지 않는다. ?을 추가하여 null을 허용해야 한다.
@@ -80,7 +81,7 @@ Kotlin의 장점 중 하나인 Safety Nullable을 하지 않았다가 생긴 문
 
 > 다행히 Android Support Library 26 이상에서는 Nullable이 필요한 부분을 좀 더 강화했다.
 
-Nullable을 정의하지 않으면 생기는 부분은 바로 Java에서 Kotlin으로 만든 method을 호출할 때 발생한다. Nullable이 가능한 변수를 Kotlin method로 넘길 때 값이 있으면 문제가 없지만, null로 가버리면 Runtime에 NullPointerException이 발생해버린다.
+`Nullable`을 정의하지 않으면 생기는 부분은 바로 Java에서 Kotlin으로 만든 `method`을 호출할 때 발생한다. `Nullable`이 가능한 변수를 Kotlin method로 넘길 때 값이 있으면 문제가 없지만, null로 가버리면 Runtime에 `NPE(NullPointerException)`이 발생해버린다.
 
 바로 아래와 같은 코드가 이에 해당할 수 있는데 간단한 샘플을 추가해보면. NotNull 변수 String 2개를 받아오고, 이를 문자 2개로 합치는 merge method이다.
 
@@ -206,7 +207,7 @@ Java에서 Kotlin으로 전환이 필요하다. 일정 시간을 잡고 전부�
 
 요기요 앱과 요기요 사장님 앱에서는 Kotlin을 한창 적용 중에 있다.
 
-이 글을 작성하는 현시점에서 요기요 안드로이드앱에서는 약 14% 정도 Kotlin을 적용한 상태이며, 새롭게 추가하는 부분을 대부분 Kotlin으로 작업 중에 있다.
+이 글을 작성하는 현시점에서 요기요 안드로이드앱에서는 약 25% 정도 Kotlin을 적용한 상태이며, 새롭게 추가하는 부분을 대부분 Kotlin으로 작업 중에 있다.
 
 ![ygy-android]
 
@@ -214,7 +215,7 @@ Java에서 Kotlin으로 전환이 필요하다. 일정 시간을 잡고 전부�
 
 ![ygy-android-owner]
 
-GitHub에서는 marster 기준으로 언어별 %을 알려준다. 그러다 보니 위와 같은 결과를 확인할 수 있다. 추가 작업을 진행 중이더라도, marster에 merge 하지 않으면 올라가지 않는 부분이 있지만, 현재까지는 위와 같이 적용하였다.
+GitHub에서는 master 기준으로 언어별 %을 알려준다. 그러다 보니 위와 같은 결과를 확인할 수 있다. 추가 작업을 진행 중이더라도, master에 merge 하지 않으면 올라가지 않는 부분이 있지만, 현재까지는 위와 같이 적용하였다.
 
 
 <br />
@@ -223,7 +224,7 @@ GitHub에서는 marster 기준으로 언어별 %을 알려준다. 그러다 보�
 
 최근에 작업한 음식점 리스트이다. 기존 레거시 코드를 제거하기 위해서 전부 새로 작성했는데 Kotlin으로 작업하였다. Activity/ViewPager/Fragment까지 모두 Kotlin으로 새로 작성하였다.
 
-기존 레이아웃이 많이 무겁기도 하였고, 이동 간 처리하는 부분도 상당히 많았다. 현재는 A/B 테스트 중이라서 일부 사용자에게 아래의 화면이 노출되고 있다.
+기존 레이아웃이 많이 무겁기도 하였고, 이동 간 처리하는 부분도 상당히 많았지만, 현재 최신 버전으로 아래와 같이 수정되었다.
 
 ![list]
 
@@ -240,4 +241,4 @@ Kotlin이라는 언어 자체가 주는 생산성은 높다고 생각한다. 처
 [ygy-android]: ../images/how-did-yogiyo-apply-kotlin/ygy-android.png
 [ygy-android-owner]: ../images/how-did-yogiyo-apply-kotlin/ygy-android-owner.png
 
-[list]: ../images/how-did-yogiyo-apply-kotlin/list.jpg
+[list]: ../images/how-did-yogiyo-apply-kotlin/list.png
