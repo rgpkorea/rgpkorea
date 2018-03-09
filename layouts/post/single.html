@@ -2,8 +2,8 @@
 
     <!-- Page Header -->
     <!-- Set your background image for this header on the line below. -->
-    {{ if isset .Params "image" }}<header class="intro-header" style="background-image: url('{{ .Site.BaseURL }}/img/{{ .Params.image }}')">
-      {{ else }}<header class="intro-header" style="background-image: url('{{ .Site.BaseURL }}/img/post-bg.jpg')">
+    {{ if isset .Params "image" }}<header class="intro-header" style="background-image: url('{{ .Site.BaseURL }}img/{{ .Params.image }}')">
+      {{ else }}<header class="intro-header" style="background-image: url('{{ .Site.BaseURL }}img/post-bg.jpg')">
     {{ end }}
       <div class="container">
         <div class="row">

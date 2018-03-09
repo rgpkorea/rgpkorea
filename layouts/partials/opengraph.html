@@ -1,9 +1,11 @@
 <meta property="og:title" content="{{ .Title }}">
-<meta property="og:description" content="{{ with .Description }}{{ . }}{{ else }}{{ if .IsPage }}{{ .Summary }}{{ else }}{{ with .Site.Params.description }}{{ . }}{{ end }}{{ end }}{{ end }}">
+<meta property="og:description" content="{{ with .Description }}{{ . }}{{ else }}{{ if .IsPage }}{{ .Summary }}{{ else }}{{ with .Site.Params.description }}{{ . }}{{ end }}{{ end }}{{ end }} {{ with .Site.Params.SubDescription}}{{ . }}{{ end }}">
 <meta property="og:type" content="{{ if .IsPage }}article{{ else }}website{{ end }}">
 <meta property="og:url" content="{{ .Permalink }}">
 {{- with .Params.images }}
 {{- range first 6 . }}
 <meta property="og:image" content="{{ . | absURL }}" />
 {{- end }}
+{{- else }}
+<meta property="og:image" content="{{ .Site.BaseURL }}img/home-bg.jpg" />
 {{- end }}

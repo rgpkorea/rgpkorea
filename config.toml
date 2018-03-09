@@ -1,6 +1,6 @@
 canonifyurls = true
 paginate = 10
-baseURL = "https://rgpkorea.github.io"
+baseURL = "https://rgpkorea.github.io/"
 languageCode = "ko-KR"
 title = "RGP Tech Blog"
 theme = "startbootstrap-clean-blog"
