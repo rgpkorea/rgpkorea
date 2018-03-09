@@ -24,9 +24,19 @@
     </item>
     
     <item>
+      <title>스타트업에서 스케일업으로</title>
+      <link>https://rgpkorea.github.io/posts/rgpkorea-startup-to-scaleup/</link>
+      <pubDate>Fri, 02 Mar 2018 10:03:00 +0000</pubDate>
+      
+      <guid>https://rgpkorea.github.io/posts/rgpkorea-startup-to-scaleup/</guid>
+      <description>안녕하세요, 스크럼 마스터를 맡고 있는 김나리입니다. 작년 말 저희 기술연구소에서 RGP Squads를 발족하면서, 일하는 방식과 조직에 있어 새로운 변화를 시도해왔는데요, 이를 계기로 지난 3년 간 기술조직의 성장에 대해 되돌아 보고자 합니다.
+저는 2015년 요기요에 합류하면서 RGP Korea와 함께 하게 되었는데요, 비슷한 시기에 배달통이 합병되면서 회사도 기술조직도 폭발적으로 성장하게 되었습니다. 조직 규모가 커지면서 제품을 개발하는 방식에 있어서도 변화가 필요했고, 여러 모습을 거쳐 현재에 이르게 되었습니다. 다만 그 변화는 지금도 &amp;ldquo;현재 진행중&amp;rdquo;이고요.</description>
+    </item>
+    
+    <item>
       <title>시니어 개발자 역할에 대한 고찰</title>
       <link>https://rgpkorea.github.io/posts/thoughts-senior-developer/</link>
-      <pubDate>Fri, 02 Mar 2018 10:01:00 +0000</pubDate>
+      <pubDate>Fri, 02 Mar 2018 10:03:00 +0000</pubDate>
       
       <guid>https://rgpkorea.github.io/posts/thoughts-senior-developer/</guid>
       <description>프롤로그 안녕하세요, RGP Korea에서 서버 개발 팀장을 맡고 있는 김법중이라고 합니다. 회사 생활을 하다 보면 자주, 그리고 자연스럽게 구성원 개개인을 판단하고 구분 짓는 목적으로 사용하는 단어들이 존재하는데, 오늘은 그 중에 하나인 주니어/시니어에 대한 이야기를 하고자 합니다.
