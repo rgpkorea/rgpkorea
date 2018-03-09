@@ -12,6 +12,9 @@ googleAnalytics = "UA-115391384-1"
 [Taxonomies]
     tag = "tags"
 
+[Author]
+    name = "RGP Korea"
+
 [Params]
     Description = "\"함께\" 일하고 싶은 다양한 개성의"
     SubDescription = "알지피 코리아인 지식공유 공간"

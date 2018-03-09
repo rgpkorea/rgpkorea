@@ -5,6 +5,7 @@ description: "요기요 개발자 김동욱 & 임수용 편"
 author: 김나리
 image: interview-bg.jpg
 images: ["../images/pro-studier-KDU-LSY/kdw-lsy.jpg"]
+tags: ["rgp", "tech", "blog", "요기요", "배달통", "interview"]
 type: post
 draft: false
 comments: true

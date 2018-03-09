@@ -4,6 +4,7 @@ description: 요기요 서비스의 GitHub Branch 운영 방법
 author: 권태환
 image: post-bg.jpg
 images: ["../images/ygy-android-release-planning/git-flow.png"]
+tags: ["rgp", "tech", "blog", "요기요", "배달통", "git", "branch", "release"]
 date: 2018-03-02T10:05:00+00:00
 type: post
 draft: false

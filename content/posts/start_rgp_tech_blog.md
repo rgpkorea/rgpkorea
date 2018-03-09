@@ -3,6 +3,7 @@ title: RGP Tech Blog를 시작하며
 description: 좋은 개발 문화를 알리는 것, 그리고 나에게 온 행운을 여러 사람들과 나누는 길이라는 믿음
 author: 조현준
 image: post-bg.jpg
+tags: ["rgp", "tech", "blog", "요기요", "배달통"]
 date: 2018-03-02T00:00:00+00:00
 type: post
 draft: false
