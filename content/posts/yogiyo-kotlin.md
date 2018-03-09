@@ -3,6 +3,7 @@ title: 요기요는 Kotlin을 어떻게 적용했나?
 description: 요기요 서비스의 Kotlin 적용 과정과 Learning Curve
 author: 권태환
 image: post-bg.jpg
+images: ["../images/how-did-yogiyo-apply-kotlin/kotlin-01.jpg", "../images/how-did-yogiyo-apply-kotlin/maxresdefault.jpg", "../images/how-did-yogiyo-apply-kotlin/ygy-android.png", "../images/how-did-yogiyo-apply-kotlin/ygy-android-owner.png", "../images/how-did-yogiyo-apply-kotlin/list.png"]
 date: 2018-03-02T10:00:00+00:00
 type: post
 draft: false

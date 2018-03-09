@@ -3,6 +3,7 @@ title: 스타트업에서 스케일업으로
 description: 스크럼 마스터의 시각으로 바라본 요기요&배달통의 변화와 성장
 author: 김나리
 image: post-bg.jpg
+images: ["../images/rgpkorea-startup-to-scaleup/rgpkorea_scale-up.PNG", "../images/rgpkorea-startup-to-scaleup/YGY_Scrum.PNG", "../images/rgpkorea-startup-to-scaleup/Yellow_Team_Retrospective.JPG", "../images/rgpkorea-startup-to-scaleup/Functioal_Org_example.PNG", "../images/rgpkorea-startup-to-scaleup/RGP_SQUADs.PNG"]
 date: 2018-03-02T10:03:00+00:00
 type: post
 draft: false
