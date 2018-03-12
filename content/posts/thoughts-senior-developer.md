@@ -7,6 +7,7 @@ tags: ["rgp", "tech", "blog", "요기요", "배달통", "Senior"]
 date: 2018-03-02T10:03:00+00:00
 type: post
 draft: false
+comments: true
 ---
 
 ## 프롤로그
