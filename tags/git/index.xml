@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Git on RGP Tech Blog</title>
+    <link>https://rgpkorea.github.io/tags/git/</link>
+    <description>Recent content in Git on RGP Tech Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ko-KR</language>
+    <copyright>Copyright © RGP Korea. All Rights Reserved.</copyright>
+    <lastBuildDate>Fri, 02 Mar 2018 10:05:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://rgpkorea.github.io/tags/git/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>요기요 Android 개발 Git Branch와 Release Planning</title>
+      <link>https://rgpkorea.github.io/posts/ygy-android-release-planning/</link>
+      <pubDate>Fri, 02 Mar 2018 10:05:00 +0000</pubDate>
+      
+      <guid>https://rgpkorea.github.io/posts/ygy-android-release-planning/</guid>
+      <description>RGP Korea는 요기요/배달통을 함께 서비스 중이다. 본 포스팅에서는 필자가 담당하고 있는 요기요 서비스의 GitHub Branch 운영 방법을 소개하려고 한다.
+요기요 안드로이드 팀의 Git Branch는 아래와 같이 운영하고 있다.
+ Master : Release 완료한 버전을 merge 하고, Release 완료 시 Tag를 함께 둔다. Developer Branch : Master Branch 기준으로 티켓 단위 개발 작업을 진행하며, 필요에 따라서 타 Developer Branch를 Merge 한다. Release Branch : 릴리즈 플래닝이 끝나면 작업 완료한 티켓을 머지 한다.</description>
+    </item>
+    
+  </channel>
+</rss>

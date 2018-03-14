@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="ko-KR"  prefix="og: http://ogp.me/ns#">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="요기요 서비스의 GitHub Branch 운영 방법">
+    <meta name="author" content="권태환">
+    <meta name="keywords" content="rgp, tech, blog, 요기요, 배달통, git, branch, release">
+
+
+    <title>요기요 Android 개발 Git Branch와 Release Planning -- RGP Tech Blog</title>
+
+    
+
+    
+    <meta property="og:title" content="요기요 Android 개발 Git Branch와 Release Planning">
+<meta property="og:description" content="요기요 서비스의 GitHub Branch 운영 방법 알지피 코리아인 지식공유 공간">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://rgpkorea.github.io/posts/ygy-android-release-planning/">
+
+
+<meta property="og:image" content="https://rgpkorea.github.io/posts/ygy-android-release-planning/../images/ygy-android-release-planning/git-flow.png" />
+
+
+
+
+    
+    <link href="https://rgpkorea.github.io/css/bootstrap.min.css" rel="stylesheet">
+
+    
+    <link href="https://rgpkorea.github.io/css/clean-blog.min.css" rel="stylesheet">
+    <link href="https://rgpkorea.github.io/css/rgp-blog.css" rel="stylesheet">
+
+    
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='//fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="https://rgpkorea.github.io/css/nanumsquare.css">
+
+    
+    
+    
+
+</head>
+
+<body>
+
+    
+    <nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+        <div class="container-fluid">
+            
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+		  <span class="menu" style="background-image: url('https://rgpkorea.github.io/img/menu.png')"></span>
+                </button>
+		<a class="navbar-brand" href="https://rgpkorea.github.io/">
+		  <span class="logo" style="background-image: url('https://rgpkorea.github.io/img/logo.svg');"></span>
+		  <span class="logo-color" style="background-image: url('https://rgpkorea.github.io/img/logo-color.svg');"></span>
+		</a>
+            </div>
+
+                       
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    
+                    <li>
+                        <a href="https://rgpkorea.github.io/">Home</a>
+                    </li>
+                    
+                    <li>
+                        <a href="https://rgpkorea.github.io/posts/">Posts</a>
+                    </li>
+                    
+                    <li>
+                        <a href="https://rgpkorea.github.io/interview/">Interview</a>
+                    </li>
+                    
+                  </ul>
+            </div>
+           
+
+        </div>
+        
+    </nav>
+
+
+    
+    
+    <header class="intro-header" style="background-image: url('https://rgpkorea.github.io/img/post-bg.jpg')">
+      
+      <div class="container">
+        <div class="row">
+           <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+             <div class="post-heading">
+               <h1>요기요 Android 개발 Git Branch와 Release Planning</h1>
+	       <hr class="small">
+               <h2 class="subheading">요기요 서비스의 GitHub Branch 운영 방법</h2>
+               <span class="meta">
+                 March 2, 2018, written by 권태환
+
+
+               </span>
+             </div>
+	         <div class="share">
+        
+            <a class="icon-twitter" href="https://twitter.com/share?text=%ec%9a%94%ea%b8%b0%ec%9a%94%20Android%20%ea%b0%9c%eb%b0%9c%20Git%20Branch%ec%99%80%20Release%20Planning&url=https%3a%2f%2frgpkorea.github.io%2fposts%2fygy-android-release-planning%2f"
+                onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+                <i class="fa fa-twitter"></i>
+                <span class="hidden">Twitter</span>
+            </a>
+        
+
+        
+            <a class="icon-facebook" href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2frgpkorea.github.io%2fposts%2fygy-android-release-planning%2f"
+                onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+                <i class="fa fa-facebook"></i>
+                <span class="hidden">Facebook</span>
+            </a>
+        
+
+        
+            <a class="icon-google-plus" href="https://plus.google.com/share?url=https%3a%2f%2frgpkorea.github.io%2fposts%2fygy-android-release-planning%2f"
+              onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
+              <i class="fa fa-google-plus"></i>
+                <span class="hidden">Google+</span>
+            </a>
+        
+        
+            <a class="icon-linkedin" href="https://www.linkedin.com/shareArticle?mini=true&title=%ec%9a%94%ea%b8%b0%ec%9a%94%20Android%20%ea%b0%9c%eb%b0%9c%20Git%20Branch%ec%99%80%20Release%20Planning&url=https%3a%2f%2frgpkorea.github.io%2fposts%2fygy-android-release-planning%2f&summary=%ec%9a%94%ea%b8%b0%ec%9a%94%20%ec%84%9c%eb%b9%84%ec%8a%a4%ec%9d%98%20GitHub%20Branch%20%ec%9a%b4%ec%98%81%20%eb%b0%a9%eb%b2%95"
+               onclick="window.open(this.href, 'linkedin-share', 'width=554,height=481');return false;">
+               <i class="fa fa-linkedin"></i>
+               <span class="hidden">LinkedIn</span>
+            </a>
+        
+    </div>
+
+           </div>
+        </div>
+      </div>
+    </header>
+
+    
+    <article>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                  
+
+<p>RGP Korea는 요기요/배달통을 함께 서비스 중이다. 본 포스팅에서는 필자가 담당하고 있는 요기요 서비스의 GitHub Branch 운영 방법을 소개하려고 한다.</p>
+
+<p>요기요 안드로이드 팀의 Git Branch는 아래와 같이 운영하고 있다.</p>
+
+<ul>
+<li><code>Master</code> : Release 완료한 버전을 merge 하고, Release 완료 시 Tag를 함께 둔다.</li>
+<li><code>Developer Branch</code> : Master Branch 기준으로 티켓 단위 개발 작업을 진행하며, 필요에 따라서 타 Developer Branch를 Merge 한다.</li>
+<li><code>Release Branch</code> : 릴리즈 플래닝이 끝나면 작업 완료한 티켓을 머지 한다.</li>
+<li><code>HotFix Branch</code> : HotFix가 필요한 경우 Release Branch와 같은 역할을 한다.</li>
+<li><code>Code-Review Branch</code> : Code Review 목적으로만 사용하는 Branch이며, 최신 코드가 항상 유지되며, 언제든 삭제 및 다시 생성될 수 있다.</li>
+</ul>
+
+<p><br /></p>
+
+<h2 id="티켓-처리-과정은">티켓 처리 과정은?</h2>
+
+<p>일반적인 회사는 아래와 같이 Branch와 Release Planning을 운영하고 있다.</p>
+
+<ol>
+<li>x.x.x에 나갈 릴리즈 플래닝을 계획한다.</li>
+<li>x.x.x에 나갈 릴리즈 플래닝 중 기간 안에 작업 가능한 범위를 조율하고, 중요한 작업을 우선 선정한다.</li>
+<li>릴리즈 일정에 맞게 작업한 내용을 Release Branch에 Merge 한다.</li>
+</ol>
+
+<p>1~3단계가 안정적으로 끝나면 좋겠지만 실제론 이런 경우가 많다.</p>
+
+<ol>
+<li>x.x.x에 나갈 릴리즈 플래닝을 계획한다.</li>
+<li>x.x.x에 나갈 릴리즈 플래닝 중 기간 안에 작업 가능한 범위를 조율하고, 중요한 작업을 우선 선정한다.
+
+<ul>
+<li>이거 꼭 나가야 해요. 추가해줘요. (중간에 일이 생긴다)</li>
+</ul></li>
+<li>릴리즈 일정에 맞게 작업한 내용을 Release Branch에 Merge 한다.
+
+<ul>
+<li>완성도가 떨어져서 이번엔 못 나가겠네요. 빼주세요.</li>
+</ul></li>
+</ol>
+
+<p>일정 중간에 새로운 일이 들어오거나, 계속적인 계획이 변경되는 게 보통이다. 아무래도 초반엔 저런 식으로 하는 게 맞겠지만, 이미 어느 정도 안정화되었다면 다음과 같은 접근 방법도 시도해볼 만 하다. 요기요에서는 아래와 같이 운영하고 있다.</p>
+
+<ol>
+<li>Jira에 새로운 티켓들이 계속 추가된다.</li>
+<li>우선순위는 팀장급에서 조율한다.</li>
+<li>조율한 티켓을 기준으로 개발자들은 우선순위대로 개발을 진행한다.
+
+<ul>
+<li>단순한 티켓도 있고, 범위가 큰 프로젝트도 있다.</li>
+</ul></li>
+<li>작업한 티켓은 Code Review를 진행한다.</li>
+<li>Code Review가 끝나면 QA에 전달한다. 티켓 생성자와 실제 QA 팀에서 각각 확인한다. (티켓 단위로)</li>
+<li>릴리즈 플래닝은 2~3주에 1회 진행한다.
+
+<ul>
+<li>릴리즈 플래닝 때는 개발이 끝난 티켓만을 가지고, 플래닝 계획을 세운다. 정말 급한 건 이때 추가하기도 한다.</li>
+</ul></li>
+<li>Merge 작업을 진행하기 위한 Release Branch가 생성되고, QA에서 전체 확인을 진행한다.
+
+<ul>
+<li>가볍게 개발자 테스트를 진행 후 QA 팀에 전달한다.</li>
+<li>티켓 단위 테스트 때와는 다르게 더 자세하게 살펴본다.</li>
+</ul></li>
+</ol>
+
+<p>약 7단계로 현재 요기요 안드로이드 팀에서 플래닝을 하고 있다.</p>
+
+<p><br /></p>
+
+<h2 id="그래서">그래서?</h2>
+
+<p>처음 입사했을 때 릴리즈 한다고 안내만 받았을 뿐 실제로 개발자들은 새로운 티켓에 집중하고 있었다. 신기할 따름이다. 보통의 회사에서는 릴리즈 날까지도 개발을 하거나, QA 하느라 정신이 없다.</p>
+
+<p>이유는 간단했다. 티켓 단위로 생성한 사람이 확인하고, 간단한 QA 진행을 사전에 해버린다는 장점 덕에 추후 Merge만 잘하면 대부분 큰 문제없이도 릴리즈가 끝난다는 것이다.</p>
+
+<p>필자는 정말 새로운 접근 방법이라고 생각한다. 그동안 일정에 쫓겨 개발하는 것만 알았지 이렇게 여유롭게 개발은 개발대로 QA는 QA대로 티켓은 또 추가되고, 잡아서 작업하고 하는 게 가능한지 몰랐다.</p>
+
+<p>뭐 애자일 방식대로라면 이 방법은 좋은 건 아니다. 딱히 일정 산정을 할 필요도 없다는 단점이 분명 존재한다. 그렇다고 일정을 전혀 산정하지 않는 건 아니다. 조금 여유롭게 일정이 잡힐 뿐&hellip;</p>
+
+<p><br /></p>
+
+<h2 id="티켓-생성">티켓 생성</h2>
+
+<p>Jira를 이용해서 새로운 티켓은 계속 생성된다. QA 팀에서도 생성하고, 각 팀에서 필요한 티켓을 발행한다. 빠른 개발이 필요하면 그에 따라 Stand By 상태의 티켓이, 그렇지 않으면 Block 상태로 남아있다.</p>
+
+<p>필요하면 끌어올려서 언제든 작업하고, 우선순위가 높은 작업을 선 작업한다.</p>
+
+<p><br /></p>
+
+<h2 id="티켓을-잡고-작업을-시작한다">티켓을 잡고 작업을 시작한다.</h2>
+
+<p>티켓을 잡아서 작업을 시작한다. 이때 Developer Branch가 생성되며, 필요에 따라 Master 외 기존 Developer Branch로부터 시작하기도 한다.</p>
+
+<p>사전 작업이 영향도가 크면 당연히 Developer Branch을 머지하고 시작하는 게 맘 편하다.</p>
+
+<p>다행히 대부분의 티켓은 영향도에 따라 내보낼 시점을 우리가 정할 수 있다는 점이다.</p>
+
+<p><br /></p>
+
+<h2 id="코드-리뷰">코드 리뷰</h2>
+
+<p>코드 리뷰는 당연히 티켓 작업이 완료되면 진행한다. Code Review 상태로 전환하고, GitHub Pull Request를 날리고 진행한다.</p>
+
+<p>Code Review Branch는 언제나 최신 코드 상태를 유지해야 하며, 빠르게 끝나야 하지만, 아직 진행 중인 단계이다.</p>
+
+<p><br /></p>
+
+<h2 id="코드-리뷰-후">코드 리뷰 후</h2>
+
+<p>코드 리뷰가 끝나면 QA가 가능한 상태로 티켓을 전환한다. 티켓 단위 QA을 진행하기 때문에 여기에서 누락한 부분을 사전 점검한다.</p>
+
+<p>추후에 한 번에 하는 게 아닌 티켓 단위로 모두 미리 확인한다.</p>
+
+<p><br /></p>
+
+<h2 id="릴리즈-플래닝">릴리즈 플래닝</h2>
+
+<p>현재 릴리즈 플래닝은 2~3주에 1회 진행하고 있다. 이때 개발팀에서 꼭 내보내야 하거나, PO(Product Owner) 팀에서 내보내야 할 티켓들을 담게 된다.</p>
+
+<p>가끔은 개발 중이거나, 진행 전인 티켓도 이때 포함되기도 하는데, 이 시간을 넘었을 경우에는 더 이상 추가하는 티켓은 없다.</p>
+
+<p>그리고 개발팀에서는 Release Branch을 생성하고, 각자가 작업한 티켓 단위 작업을 Merge 하는 작업을 진행한다.</p>
+
+<p>그리고 개발팀에서 1~2일간 내부 테스트를 진행하고, 누락 코드를 확인하는 작업을 진행한다.</p>
+
+<p>그리고 QA 팀에서 전체 확인 과정을 거친다.</p>
+
+<p><br /></p>
+
+<h2 id="릴리즈-후">릴리즈 후</h2>
+
+<p>QA 팀에서 전체 확인을 하고, 오류가 크지 않다면 다음 릴리즈에 포함하도록 처리하고, 높은 경우 해당 릴리즈에 포함하여 작업을 진행할 수 있도록 한다.</p>
+
+<p>QA 기간에는 당연히 릴리즈 나갈 작업이 우선이지만, 새로운 티켓을 잡아도 문제는 없다.</p>
+
+<p>릴리즈가 끝나면 Master에 포함하여 실제 배포를 완료한다.</p>
+
+<p><br /></p>
+
+<h2 id="정리하면">정리하면</h2>
+
+<p>위의 내용을 정리하면 아래와 같은 그림이 나오는데, 이쁘지는 않다.</p>
+
+<p>Code Review는 중간중간 진행하기 때문에 아래 그림에 포함하지는 않았으며, Feature Branch들이 N 개 생성되게 된다.</p>
+
+<p>릴리즈 플래닝이 작업이 끝난 티켓을 대상으로 하기 때문에 전체적인 일정이 촉박한 경우가 많지는 않다. 또한 티켓을 잡고, 개발 중에 변경되는 사항이 생겨도, 전체 릴리즈 플래닝에 영향이 적다. 진짜 급해서 이번에 나가야 하는 게 아니라면, 그 티켓에서 모든 개발이 완료하기 전에 Code Review로 넘어가지 않기 때문이다.</p>
+
+<p>그러다 보니 좀 더 편하게 작업하는 게 가능하다. 다만 Merge 해야 할 양은 분명히 많다.</p>
+
+<p><img src="../images/ygy-android-release-planning/git-flow.png" alt="git-flow" /></p>
+
+<p><br /></p>
+
+<h2 id="이런-게-가능하려면">이런 게 가능하려면?</h2>
+
+<p>이런 플로우가 가능하려면 결국 릴리즈 플래닝을 바라보는 시각이 변해야 한다. 개발 초기라면 이런 방법이 의미 없다. 아무것도 없는데 어떻게 저런 플래닝이 가능하겠는가?</p>
+
+<p>어느 정도 안정적인 궤도에 올랐을 때는 시도해볼 법한 방법이라고 생각된다. 요기요는 어느 정도 안정화 상태이기도 하고, 항상 급하게 나가야 할 일이 적기 때문이기도 하다.</p>
+
+<p>모든 게 티켓 단위로 이루어지며, 개발 시작부터 종료까지 티켓을 통해 트래킹이 가능하다. 어느 정도의 시간이 걸렸는지에 대한 트래킹은 아직 하지는 않지만, 할 수 있다고 생각된다.</p>
+
+<p>항상 안정적이게 접근할 필요는 없지만 상호 간에 부담감이 적은 건 분명하다.</p>
+
+<p><br /></p>
+
+<h2 id="이렇게-운영하면-장-단점은">이렇게 운영하면 장/단점은?</h2>
+
+<p>릴리즈 플래닝을 거치기 전에 Code Review를 거친다. 그래서 단점으로 Merge가 2회 생긴다. 똑같은 코드를 2번 Merge해야 하는데, 생각보다 양이 많을 경우도 있지만, 중간에 영향도가 큰 작업은 대부분 사전 Merge를 통해 이를 해결하고 있다. (이렇게라도 해야 나중에 작업할게 줄어들긴 한다)</p>
+
+<p>필자의 경우는 약간 루즈하게 느껴질때도 있지만, 앱의 안정성을 생각해보면 충분한 시간이 필요하다고 생각된다. 딱히 급하게 처리할 필요 없다는 생각이 들어서 천천히 처리하기도 하지만, 정말 못해서 늦어지는 경우도 생긴다. 여하튼 필자는 전자의 경우가 간혹 생길 때도 있었다.</p>
+
+<p>추후 릴리즈 플래닝이 꼭 나가야 할 티켓을 사전에 알고 있는 게 아니라서 부담감은 상대적으로 적다.</p>
+
+<p>그리고 업무시간에 집중만 잘하면 티켓 처리하는 시간을 상대적으로 줄일 수 있다. (단점은 일정 산출을 잘 하지는 못한다는 것이다.)</p>
+
+<p>장점은 업무시간 집중만 잘하면 정시 출/퇴근이 가능하다는 것이다. 야근하는 경우는 정말 좀 만 하면 끝날 것 같은 데에서 시작하는데 그 경우가 많지는 않았다. 보통 내가 좀만 더 하고 가야지 해서 야근하는 경우를 제외하면 야근하지 않는다가 필자의 원칙이다.</p>
+
+<p>이 방법으로 작업하는 건 분명한 장/단점이 있지만 어느 정도 안정화되었다면 여러분도 도전해볼 수 있을 법 하다. 다만 위에서 이렇게 하는 걸 어느 정도 인정해줘야겠지만 말이다&hellip;</p>
+
+<p>권태환, 요기요 클라이언트개발 엔지니어 @RGP Korea</p>
+
+                  
+   <div id="disqus_thread"></div>
+<script>
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "rgp-tech-blog" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+                </div>
+            </div>
+        </div>
+    </article>
+
+    
+    <footer class="footer-post">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                  <ul class="list-inline">
+                    <li>
+                      <a href="https://rgpkorea.recruiter.co.kr" target="_blank">
+			  Career
+                      </a>
+                    </li>
+		    <li>
+		      <span>&#124;</span>
+		    </li>
+                    <li>
+                      <a href="https://www.deliveryhero.com" target="_blank">
+			  Delivery Hero Global Network
+                      </a>
+                    </li>
+                  </ul>
+                  <p class="copyright text-muted">Copyright © RGP Korea. All Rights Reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    
+    <script src="https://rgpkorea.github.io/js/jquery.min.js"></script>
+
+    
+    <script src="https://rgpkorea.github.io/js/bootstrap.min.js"></script>
+
+    
+    <script src="https://rgpkorea.github.io/js/clean-blog.js"></script>
+
+    
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-115391384-1', 'auto');
+ga('send', 'pageview');
+</script>
+
+
+</body>
+
+</html>
+

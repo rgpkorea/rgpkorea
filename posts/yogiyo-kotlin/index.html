@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="ko-KR"  prefix="og: http://ogp.me/ns#">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="요기요 서비스의 Kotlin 적용 과정과 Learning Curve">
+    <meta name="author" content="권태환">
+    <meta name="keywords" content="rgp, tech, blog, 요기요, 배달통, kotlin">
+
+
+    <title>요기요는 Kotlin을 어떻게 적용했나? -- RGP Tech Blog</title>
+
+    
+
+    
+    <meta property="og:title" content="요기요는 Kotlin을 어떻게 적용했나?">
+<meta property="og:description" content="요기요 서비스의 Kotlin 적용 과정과 Learning Curve 알지피 코리아인 지식공유 공간">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://rgpkorea.github.io/posts/yogiyo-kotlin/">
+
+
+<meta property="og:image" content="https://rgpkorea.github.io/posts/yogiyo-kotlin/../images/how-did-yogiyo-apply-kotlin/kotlin-01.jpg" />
+
+<meta property="og:image" content="https://rgpkorea.github.io/posts/yogiyo-kotlin/../images/how-did-yogiyo-apply-kotlin/maxresdefault.jpg" />
+
+<meta property="og:image" content="https://rgpkorea.github.io/posts/yogiyo-kotlin/../images/how-did-yogiyo-apply-kotlin/ygy-android.png" />
+
+<meta property="og:image" content="https://rgpkorea.github.io/posts/yogiyo-kotlin/../images/how-did-yogiyo-apply-kotlin/ygy-android-owner.png" />
+
+<meta property="og:image" content="https://rgpkorea.github.io/posts/yogiyo-kotlin/../images/how-did-yogiyo-apply-kotlin/list.png" />
+
+
+
+
+    
+    <link href="https://rgpkorea.github.io/css/bootstrap.min.css" rel="stylesheet">
+
+    
+    <link href="https://rgpkorea.github.io/css/clean-blog.min.css" rel="stylesheet">
+    <link href="https://rgpkorea.github.io/css/rgp-blog.css" rel="stylesheet">
+
+    
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='//fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="https://rgpkorea.github.io/css/nanumsquare.css">
+
+    
+    
+    
+
+</head>
+
+<body>
+
+    
+    <nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+        <div class="container-fluid">
+            
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+		  <span class="menu" style="background-image: url('https://rgpkorea.github.io/img/menu.png')"></span>
+                </button>
+		<a class="navbar-brand" href="https://rgpkorea.github.io/">
+		  <span class="logo" style="background-image: url('https://rgpkorea.github.io/img/logo.svg');"></span>
+		  <span class="logo-color" style="background-image: url('https://rgpkorea.github.io/img/logo-color.svg');"></span>
+		</a>
+            </div>
+
+                       
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    
+                    <li>
+                        <a href="https://rgpkorea.github.io/">Home</a>
+                    </li>
+                    
+                    <li>
+                        <a href="https://rgpkorea.github.io/posts/">Posts</a>
+                    </li>
+                    
+                    <li>
+                        <a href="https://rgpkorea.github.io/interview/">Interview</a>
+                    </li>
+                    
+                  </ul>
+            </div>
+           
+
+        </div>
+        
+    </nav>
+
+
+    
+    
+    <header class="intro-header" style="background-image: url('https://rgpkorea.github.io/img/post-bg.jpg')">
+      
+      <div class="container">
+        <div class="row">
+           <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+             <div class="post-heading">
+               <h1>요기요는 Kotlin을 어떻게 적용했나?</h1>
+	       <hr class="small">
+               <h2 class="subheading">요기요 서비스의 Kotlin 적용 과정과 Learning Curve</h2>
+               <span class="meta">
+                 March 2, 2018, written by 권태환
+
+
+               </span>
+             </div>
+	         <div class="share">
+        
+            <a class="icon-twitter" href="https://twitter.com/share?text=%ec%9a%94%ea%b8%b0%ec%9a%94%eb%8a%94%20Kotlin%ec%9d%84%20%ec%96%b4%eb%96%bb%ea%b2%8c%20%ec%a0%81%ec%9a%a9%ed%96%88%eb%82%98%3f&url=https%3a%2f%2frgpkorea.github.io%2fposts%2fyogiyo-kotlin%2f"
+                onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+                <i class="fa fa-twitter"></i>
+                <span class="hidden">Twitter</span>
+            </a>
+        
+
+        
+            <a class="icon-facebook" href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2frgpkorea.github.io%2fposts%2fyogiyo-kotlin%2f"
+                onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+                <i class="fa fa-facebook"></i>
+                <span class="hidden">Facebook</span>
+            </a>
+        
+
+        
+            <a class="icon-google-plus" href="https://plus.google.com/share?url=https%3a%2f%2frgpkorea.github.io%2fposts%2fyogiyo-kotlin%2f"
+              onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
+              <i class="fa fa-google-plus"></i>
+                <span class="hidden">Google+</span>
+            </a>
+        
+        
+            <a class="icon-linkedin" href="https://www.linkedin.com/shareArticle?mini=true&title=%ec%9a%94%ea%b8%b0%ec%9a%94%eb%8a%94%20Kotlin%ec%9d%84%20%ec%96%b4%eb%96%bb%ea%b2%8c%20%ec%a0%81%ec%9a%a9%ed%96%88%eb%82%98%3f&url=https%3a%2f%2frgpkorea.github.io%2fposts%2fyogiyo-kotlin%2f&summary=%ec%9a%94%ea%b8%b0%ec%9a%94%20%ec%84%9c%eb%b9%84%ec%8a%a4%ec%9d%98%20Kotlin%20%ec%a0%81%ec%9a%a9%20%ea%b3%bc%ec%a0%95%ea%b3%bc%20Learning%20Curve"
+               onclick="window.open(this.href, 'linkedin-share', 'width=554,height=481');return false;">
+               <i class="fa fa-linkedin"></i>
+               <span class="hidden">LinkedIn</span>
+            </a>
+        
+    </div>
+
+           </div>
+        </div>
+      </div>
+    </header>
+
+    
+    <article>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                  
+
+<p>RGP Korea는 &lsquo;요기요&rsquo;와 &lsquo;배달통&rsquo;을 함께 운영중이다. 이 중 필자가 담당하고 있는 요기요 서비스에 최근 Java와 Kotlin을 함께 사용하고 있다. 요기요 앱에 현재까지 약 14%의 Kotlin을 적용한 상태인데, 왜 도입하게 되었으며, 러닝 커브의 해결은 어떻게 했는지 정리하려 한다.</p>
+
+<p><br /></p>
+
+<h2 id="kotlin">Kotlin</h2>
+
+<p><a href="https://kotlinlang.org/">Kotlin</a>은 JetBrain 사에서 2011년 첫 발표된 후 2016년 1.0 정식 버전이 배포되었고, 현재 1.1.60 버전이 배포 중이다. 2011년 이후 5년이라는 시간을 통해 안정화가 진행되어, 현재 Kotlin은 Java 대신 실 개발에 사용하기 딱 좋은 상태로 안정화되어 있다. 2017년 Google I/O에서 Android 메인 언어인 Java와 함께 Kotlin을 병행으로 사용할 수 있도록 채택해주었다.</p>
+
+<p>이미 Google I/O 신청 페이지에서 종전에 없던 Kotlin 사용률을 조사한 것만 하더라도 필자는 기대하긴 했으며, 듣기론 구글 내부에서도 일부 사람만이 이를 알고 있었다고 한다. <a href="https://developers-kr.googleblog.com/2017/06/android-announces-support-for-kotlin.html">구글 블로그</a>를 통해 Kotlin을 채택한 이유를 설명하고 있는데, 이미 유명한 회사들(Expedia, Flipboard, Pinterest, Square 등)이 Kotlin을 실 프로덕트에 적용한 사례가 있으며, 안정적으로 사용하고 있다는 이유를 들어 채택 사유에 대해서 설명하고 있다.</p>
+
+<p>특히 필자는 Kotlin을 약 1년간 학습하면서 느꼈던 장점인 Safety Nullable에 대한 만족도가 높았으며, Java에서는 람다식과 스트림 등 최신 기능을 사용하기 위한 제약이 따른다는 점 등이 Kotlin을 학습하면서 굉장히 만족스럽게 생각하고 있었다. 행사 당일에 직접 촬영한 사진을 아래와 같이 추가해보았다.</p>
+
+<p><img src="../images/how-did-yogiyo-apply-kotlin/kotlin-01.jpg" alt="kotlin-01" /></p>
+
+<blockquote>
+<p>Google I/O 2017 Developer Keynote ⓒ 권태환
+필자는 2017년 Google I/O 행사에 직접 참여하여 Kotlin이 정식 채택되었다는 소식을 들었다.</p>
+</blockquote>
+
+<p><br /></p>
+
+<h2 id="요기요에-kotlin-적용하기">요기요에 Kotlin 적용하기</h2>
+
+<p>다음의 3가지 과정을 정리해본다.</p>
+
+<ol>
+<li>설득</li>
+<li>적용</li>
+<li>러닝 커브는 어떻게 할 것인가?</li>
+</ol>
+
+<p><br /></p>
+
+<ol>
+<li>설득<br />
+설득은 생각보다 쉬웠다. Google I/O 이후에 적용을 하였기에 아주 쉽게 설득할 수 있었다. 그전에는 요기요 사장님 앱 (요기요 사장님들을 위한 주문 접수 앱)에서만 하기로 하였으나, Google I/O로 인해 일반 사용자 대상의 요기요 앱에서도 적용할 수 있게 되었다.
+그리고 필자가 이미 Kotlin을 학습한 상태였기에 안정성 검증에 대한 부담감을 가지고 생산성을 선택했다. Kotlin을 6개월 정도 실 프로젝트에 적용하고 있는데, Java보다는 높은 생산성을 유지하고 있다.
+다만 NullPointerException을 피하는 기법을 제공하고 있는데, 일부 실수로 인해 초반에 NullPointerException이 많았었다.<br /><br /></li>
+
+<li><p>적용<br />
+처음 시작한 부분은 Google I/O 이전에 작업했던 클래스 하나를 Java to Kotlin으로 Convert 하는 과정을 거쳤다. 길지 않은 ViewModel로써 딱 하나만 처리하도록 역할을 구분해둔 상태였다. 그래서 어렵지 않게 작업하였다. 일단 필자가 먼저 프로젝트에 Kotlin을 적용하였다.<br /><br /></p></li>
+
+<li><p>러닝 커브는 어떻게 할 것인가?<br />
+필자가 혼자서 적용할 수 있긴 하다. 하지만 함께하는 팀원과 팀장님도 이를 적용해야 한다. 다행히도 팀 내에서는 Kotlin에 대한 관심을 가지고 있어 조금이라도 학습한 상태였다. 그리고 웹을 하신 팀장님은 어렵지 않게 Kotlin을 적용하셨고, 오히려 필자보다 큰 문제없이 사용하였다. 오히려 필자는 1년이라는 시간 동안 겪어보지 못한 오류들을 경험하였고, 더 좋은 문법들로 나가는 방법도 터득하였다.</p></li>
+</ol>
+
+<p>생각보다 간단하게 설득하였고, 적용할 수 있었다. 어떤 것이든 새로운 부분을 적용하는데 있어서 학습 비용은 발생한다. 그 학습 비용은 얼마나 관심을 가지고 하느냐인데 필자가 생각하기엔 회사에서 적용하는 것만큼 좋은 것은 없는 것 같다는 생각이다. 집에 가면 공부를 하지않으니 있는 시간에라도 최대로 학습하는 게 필요한 것이다.</p>
+
+<p><br /></p>
+
+<h2 id="나부터-시작하자">나부터 시작하자</h2>
+
+<p>Google I/O 세션 중 <a href="https://events.google.com/io/schedule/?section=may-19&amp;sid=bad5074c-ffed-4038-abea-8c787370c65f&amp;speaker=5b7d8f98-48f9-4de3-a02a-2a6d52d1a8c3">Pinterest - Christina Lee</a>와 <a href="https://events.google.com/io/schedule/?section=may-19&amp;sid=bad5074c-ffed-4038-abea-8c787370c65f&amp;speaker=3d352052-ece4-4f78-9193-3b5b7388809e">Jake Wharton</a>이 함께 한 세션은 꼭 시청하기 바란다.</p>
+
+<p><img src="../images/how-did-yogiyo-apply-kotlin/maxresdefault.jpg" alt="maxresdefault" /></p>
+
+<p>이 세션에서는 핀터레스트에서 새로운 걸 도입하기 위해서 어떻게 접근했을 때 가장 좋았는 지 소개하고 있다. 생산성이 높아지고, 좋은 언어라고 하더라도 결국 나와 함께 할 사람을 설득해야 한다. 그렇게 하기 위해서는 나부터 시작하고, 이들을 한 명씩 설득하는 방법이 가장 좋다. 말로만 떠들기 보다 왜 좋은지를 구체화하고, 함께 할 수 있는 팀원들을 잘 설득해서 모두가 윈윈하는 방법으로 접근해야 한다. 상위자를 설득해서 결국 적용할 수 있는 게 가장 좋겠지만. 이러한 방법을 이 영상을 통해 짧게나마 소개받을 수 있다.</p>
+
+<p>결국 나 잘났으니 써보자가 아닌 왜 효율적이고, 좋은지를 설명할 수 있어야 한다. 혼자라면 이런 게 다 소용없겠지만(내가 선택한 것이 답이다.) 함께할 사람이 있을 때는 설득이라는 게 필요하니 이 영상을 추천한다.</p>
+
+<p>결론은 <code>정말 꼭 새로운 걸 해보고 싶다면 그냥 하자가 아닌 나부터 학습해서 설득하는 방법을 택해보자.</code></p>
+
+<p><br /></p>
+
+<h2 id="nullpointerexception-발생">NullPointerException 발생</h2>
+
+<p>아무리 1년 동안 공부를 했다고 하더라도, <code>NPE(NullPointerException)</code>가 발생해버렸다. <code>NPE(NullPointerException)</code>을 줄이려고 Kotlin 장점을 활용해야 하는데 다음을 간과해버렸다.</p>
+
+<ul>
+<li>Java : 언제나 null을 가질 수 있는 변수를 만들 수 있다</li>
+<li>Kotlin : 기본은 Nullable을 허용하지 않는다. ?을 추가하여 null을 허용해야 한다.</li>
+</ul>
+
+<p>Kotlin의 장점 중 하나인 Safety Nullable을 하지 않았다가 생긴 문제이다. ?표 하나만 추가하면 <code>Nullable</code>이지만 <code>NotNull</code>을 해버린 부분이다.</p>
+
+<blockquote>
+<p>다행히 Android Support Library 26 이상에서는 Nullable이 필요한 부분을 좀 더 강화했다.</p>
+</blockquote>
+
+<p><code>Nullable</code>을 정의하지 않으면 생기는 부분은 바로 Java에서 Kotlin으로 만든 <code>method</code>을 호출할 때 발생한다. <code>Nullable</code>이 가능한 변수를 Kotlin method로 넘길 때 값이 있으면 문제가 없지만, null로 가버리면 Runtime에 <code>NPE(NullPointerException)</code>이 발생해버린다.</p>
+
+<p>바로 아래와 같은 코드가 이에 해당할 수 있는데 간단한 샘플을 추가해보면. NotNull 변수 String 2개를 받아오고, 이를 문자 2개로 합치는 merge method이다.</p>
+
+<pre><code class="language-kotlin">// class name String.kt
+fun merge(a: String, b: String) = &quot;$a $b&quot;
+</code></pre>
+
+<p>위의 merge method을 kotlin 파일에서 호출하면 a가 Nullable이라서 즉시 오류를 발생시켜준다. (실제 디컴파일하면 Java 코드라서 오류가 안나오는 게 정상이긴 하지만)</p>
+
+<pre><code class="language-kotlin">class SampleTest {
+  val a: String? = null
+
+  @Test
+  fun test() {
+    StringKt.merge(a, &quot;BC&quot;)
+  }
+}
+</code></pre>
+
+<p>하지만 필자가 실수한 코드는 java에서 Kotlin을 부르는 부분이다.</p>
+
+<pre><code class="language-java">public class SampleTest {
+
+  private String a = &quot;A&quot;;
+  private String b = &quot;B&quot;;
+
+  @Before
+  public void setUp() { a = null; }
+
+  @Test
+  public void sample() {
+      System.out.println(&quot;merge &quot; + StringKt.merge(a, b));
+    }
+}
+</code></pre>
+
+<p>자바에서는 변수에 언제든 값을 변경하는 게 가능하며, null을 적용하는 게 가능하다. 이 부분이 API을 통해서 내려온 값이고, 그 값이 null이라면 Runtime 오류는 피할 수 없어 아래와 같은 오류가 발생해버린다.</p>
+
+<pre><code>java.lang.IllegalArgumentException:
+ Parameter specified as non-null is null:
+ method kr.co.yogiyo.myapplication.StringKt.merge
+</code></pre>
+
+<p><br /></p>
+
+<h2 id="nullpointerexception을-피하려면">NullPointerException을 피하려면</h2>
+
+<p>결국 NullPointerException을 피하려면 다음과 같은 행동을 해야 한다. StringKt.merge(a, b)을 부르는 시점에 if 문으로 NotNull 임을 체크하고, 값을 넘겨주거나, try/catch을 이용하여 예외 처리를 하는 등으로 조치를 취해야 한다.</p>
+
+<pre><code class="language-java">public class SampleTest {
+
+  // 생략 ...
+
+  @Test
+  public void sample() {
+    try {
+      System.out.println(&quot;merge &quot; + StringKt.merge(a, b));
+    } catch (NullPointerException e) {}
+
+    // or
+    if (a != null &amp;&amp; b != null) {
+      System.out.println(&quot;merge &quot; + StringKt.merge(a, b));
+    }
+  }
+}
+</code></pre>
+
+<p>하지만 <code>StringKt.merge</code>을 10곳에서 호출하면 10곳에서 모두 이를 처리해야 하는데 너무 귀찮은 일이다.</p>
+
+<p>그래서 아래와 같이 불리게 될 Method을 예외 처리하는 편이 편하다. 받는 쪽에서 <code>@Nullable</code>을 허용하고, 이를 사용하는 것이다. 그럼 보내는 쪽에서는 별도로 신경 써야 할 부분도 없어지고, 받는 곳에서 알아서 return 해주도록 처리한다.</p>
+
+<pre><code class="language-kotlin">// class name String.kt
+fun merge(a: String?, b: String?) = &quot;${a ?: &quot;&quot;} ${b ?: &quot;&quot;}&quot;
+</code></pre>
+
+<p><br /></p>
+
+<h2 id="요기요에서-학습-했던-방법은">요기요에서 학습 했던 방법은?</h2>
+
+<p>필자는 1년 가까이 Kotlin을 학습한 상태이다. 하지만 혼자서 Kotlin을 적용할 순 없고, 내가 없더라도 다른 팀원이 수정해야 한다. 그렇기에 팀원 간 러닝 커브를 줄이는 방법이 필요하다. 팀장님은 혼자서도 어느 정도 사용하는 게 가능하였고, 잘 모르는 부분만 필자에게 물어보는 정도로 잘 다루고 있으셨고, 팀원과 약 1개월간 페어 프로그래밍을 진행하면서 Kotlin을 학습할 수 있었다.</p>
+
+<ol>
+<li>페어 프로그래밍을 진행</li>
+<li>먼저 Java로 클래스 생성</li>
+<li>Java to Kotlin Convert을 이용하여 코드 컨버팅</li>
+<li>이미 Kotlin 파일이 있다면 별도의 temp.java 파일을 만들어 거기서 복사 붙여넣기 한다
+
+<ul>
+<li>옆에서 부족한 부분을 조금씩 서포트</li>
+</ul></li>
+<li>어느 정도 숙련되었을 때 Kotlin으로 직접 작성하는 게 가능</li>
+</ol>
+
+<p>페어 프로그래밍을 약 1개월간 진행했는데 처음같이 진행하였고, Kotlin도 처음 적용하였다. 다행히 이렇게 진행함으로써 팀원도 Kotlin을 잘 활용할 수 있을 정도로 학습이 되었다는 점이다. 그리고 필자도 잘 몰랐던 부분을 기존 보다 코드 축약이 가능해졌다는 점이다.</p>
+
+<p>페어 프로그래밍을 적절히 활용하려면 함께 할 시간을 좀 더 줄이면서 진행해야 하겠지만, 서로 잘 모르는 부분을 봐줄 수 있다면 충분히 성장하기 좋은 방식이었다.</p>
+
+<p>다행히 함께 한 팀원은 나보다 더 오랜 기간 회사를 다녔으며, 누락할 수 있는 부분을 더 꼼꼼히 살펴보면서 페어 프로그래밍을 할 수 있었다.</p>
+
+<p><br /></p>
+
+<h2 id="변환의-조건은">변환의 조건은?</h2>
+
+<p>Java에서 Kotlin으로 전환이 필요하다. 일정 시간을 잡고 전부다 Kotlin으로 작업하면 좋겠지만, 그렇게 하려면 시간이 많이 들어가니 그냥 새로 만드는 편이 빠르다.</p>
+
+<p>하지만 회사에서는 그러지 못하니 다음과 같은 방법으로 Convert 진행하고 있다.</p>
+
+<ul>
+<li>새로운 프로젝트 단위로 진행한다</li>
+<li>기존 코드를 리팩토링 해야 한다</li>
+</ul>
+
+<p>위와 같이 2가지 조건 중 1개라도 적용되면 새로운 패키지와 프로젝트를 따고, 이를 정리한다.</p>
+
+<p>새로운 패키지의 조건은 필자가 운영하는 개인 블로그에 올렸던 <a href="http://thdev.tech/androiddev/2017/02/20/Android-MVP-Package-Structure.html">패키지 구조화 방법</a>을 회사에서도 사용하고 있다. 코드 수정시에 뷰 단위로 클래스가 모여있기 때문에 하나의 패키지만 확인하면 많은 이동 없이도 빠르게 수정이 가능하다. N Activity의 N Fragment에 속해있는 ViewHolder을 수정해야 한다고 하더라도, 패키지 이름만 잘 만들어두면 빠르게 파악하고, 수정이 가능하다는 장점을 가진다.</p>
+
+<p><br /></p>
+
+<h2 id="현재-요기요-와-요기요-사장님-앱에서는">현재 &lsquo;요기요&rsquo;와 &lsquo;요기요 사장님&rsquo; 앱에서는</h2>
+
+<p>요기요 앱과 요기요 사장님 앱에서는 Kotlin을 한창 적용 중에 있다.</p>
+
+<p>이 글을 작성하는 현시점에서 요기요 안드로이드앱에서는 약 25% 정도 Kotlin을 적용한 상태이며, 새롭게 추가하는 부분을 대부분 Kotlin으로 작업 중에 있다.</p>
+
+<p><img src="../images/how-did-yogiyo-apply-kotlin/ygy-android.png" alt="ygy-android" /></p>
+
+<p>요기요 사장님 앱은 거의 대부분을 팀원 혼자서 관리하고 있다. 페어 프로그래밍을 통해 학습한 Kotlin을 한참 적용 중이다.</p>
+
+<p><img src="../images/how-did-yogiyo-apply-kotlin/ygy-android-owner.png" alt="ygy-android-owner" /></p>
+
+<p>GitHub에서는 master 기준으로 언어별 %을 알려준다. 그러다 보니 위와 같은 결과를 확인할 수 있다. 추가 작업을 진행 중이더라도, master에 merge 하지 않으면 올라가지 않는 부분이 있지만, 현재까지는 위와 같이 적용하였다.</p>
+
+<p><br /></p>
+
+<h2 id="후기">후기</h2>
+
+<p>최근에 작업한 음식점 리스트이다. 기존 레거시 코드를 제거하기 위해서 전부 새로 작성했는데 Kotlin으로 작업하였다. Activity/ViewPager/Fragment까지 모두 Kotlin으로 새로 작성하였다.</p>
+
+<p>기존 레이아웃이 많이 무겁기도 하였고, 이동 간 처리하는 부분도 상당히 많았지만, 현재 최신 버전으로 아래와 같이 수정되었다.</p>
+
+<p><img src="../images/how-did-yogiyo-apply-kotlin/list.png" alt="list" /></p>
+
+<p>Kotlin이라는 언어 자체가 주는 생산성은 높다고 생각한다. 처음 공부하는 사람에게는 러닝 커브는 당연한 결과이다. 하지만 Java을 어느 정도 알고 있는 상태라면 Kotlin을 학습하는데 전혀 문제가 없다. 특히나 스크립트 또는 함수형 언어를 사용하던 개발자라면 더 쉽게 Kotlin을 적용하는 게 가능하다. 구글이 정식 언어 채택 이후 생각보다 많은 사람들이 Kotlin을 학습하고 있으며, 실제 프로젝트에 조금이나마 적용하고 있는 게 눈에 띄고 있다.</p>
+
+<p>결국 함께 할 사람을 잘 설득해서 더 좋은 방향으로 이끌 수 있어야 하겠지만&hellip;</p>
+
+<p>권태환, 요기요 클라이언트개발 엔지니어 @RGP Korea</p>
+
+                  
+   <div id="disqus_thread"></div>
+<script>
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "rgp-tech-blog" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+                </div>
+            </div>
+        </div>
+    </article>
+
+    
+    <footer class="footer-post">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                  <ul class="list-inline">
+                    <li>
+                      <a href="https://rgpkorea.recruiter.co.kr" target="_blank">
+			  Career
+                      </a>
+                    </li>
+		    <li>
+		      <span>&#124;</span>
+		    </li>
+                    <li>
+                      <a href="https://www.deliveryhero.com" target="_blank">
+			  Delivery Hero Global Network
+                      </a>
+                    </li>
+                  </ul>
+                  <p class="copyright text-muted">Copyright © RGP Korea. All Rights Reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    
+    <script src="https://rgpkorea.github.io/js/jquery.min.js"></script>
+
+    
+    <script src="https://rgpkorea.github.io/js/bootstrap.min.js"></script>
+
+    
+    <script src="https://rgpkorea.github.io/js/clean-blog.js"></script>
+
+    
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-115391384-1', 'auto');
+ga('send', 'pageview');
+</script>
+
+
+</body>
+
+</html>
+
