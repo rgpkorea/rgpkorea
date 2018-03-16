@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Scrum on RGP Tech Blog</title>
-    <link>https://rgpkorea.github.io/tags/scrum/</link>
-    <description>Recent content in Scrum on RGP Tech Blog</description>
+    <title>Squad on RGP Tech Blog</title>
+    <link>https://rgpkorea.github.io/tags/squad/</link>
+    <description>Recent content in Squad on RGP Tech Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-KR</language>
     <copyright>Copyright © RGP Korea. All Rights Reserved.</copyright>
     <lastBuildDate>Fri, 16 Mar 2018 01:07:00 +0000</lastBuildDate>
     
-	<atom:link href="https://rgpkorea.github.io/tags/scrum/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://rgpkorea.github.io/tags/squad/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -21,16 +21,6 @@
       <description>Photo by Sarah Pflug from Burst  안녕하세요, Scrum Master를 맡고 있는 김나리입니다. 이번 포스팅에서는 개발 조직에서의 &amp;lsquo;리더십&amp;rsquo; 역량에 대한 저의 생각과 고민을 이야기해보려고 합니다.
 일반적으로 조직 내의 리더십은 &amp;lsquo;리더&amp;rsquo; 혹은 &amp;lsquo;매니저&amp;rsquo;에게만 국한되는 역량으로 생각하기 쉽습니다. 물론, 채용 과정에서 리더십 경험에 대해 묻기도 하지만, 실제로 조직에서 직책자를 맡고 있지 않은 이상, 리더십이 딱히 내 직무에 중요한 역량이라고 인지하고 있는 사람들이 상대적으로 많지 않아 보인다는 것이죠.
 개발 조직에서는 어떨까요? 각 실무자는 실무에만 집중하고, 리더십은 팀장, 실장, 임원에게만 필요한 덕목일까요?</description>
-    </item>
-    
-    <item>
-      <title>스타트업에서 스케일업으로</title>
-      <link>https://rgpkorea.github.io/posts/rgpkorea-startup-to-scaleup/</link>
-      <pubDate>Fri, 02 Mar 2018 10:03:00 +0000</pubDate>
-      
-      <guid>https://rgpkorea.github.io/posts/rgpkorea-startup-to-scaleup/</guid>
-      <description>안녕하세요, 스크럼 마스터를 맡고 있는 김나리입니다. 작년 말 저희 기술연구소에서 RGP SQUADs를 발족하면서, 일하는 방식과 조직에 있어 새로운 변화를 시도해왔는데요, 이를 계기로 지난 3년 간 기술조직의 성장에 대해 되돌아 보고자 합니다.
-저는 2015년 요기요에 합류하면서 RGP Korea와 함께 하게 되었는데요, 비슷한 시기에 배달통이 합병되면서 회사도 기술조직도 폭발적으로 성장하게 되었습니다. 조직 규모가 커지면서 제품을 개발하는 방식에 있어서도 변화가 필요했고, 여러 모습을 거쳐 현재에 이르게 되었습니다. 다만 그 변화는 지금도 &amp;ldquo;현재 진행중&amp;rdquo;이고요.</description>
     </item>
     
   </channel>

@@ -7,10 +7,21 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-KR</language>
     <copyright>Copyright © RGP Korea. All Rights Reserved.</copyright>
-    <lastBuildDate>Fri, 02 Mar 2018 10:05:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 16 Mar 2018 01:07:00 +0000</lastBuildDate>
     
 	<atom:link href="https://rgpkorea.github.io/tags/blog/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>개발 조직에서의 리더십 - Practice and Mindset</title>
+      <link>https://rgpkorea.github.io/posts/tech_leadership/</link>
+      <pubDate>Fri, 16 Mar 2018 01:07:00 +0000</pubDate>
+      
+      <guid>https://rgpkorea.github.io/posts/tech_leadership/</guid>
+      <description>Photo by Sarah Pflug from Burst  안녕하세요, Scrum Master를 맡고 있는 김나리입니다. 이번 포스팅에서는 개발 조직에서의 &amp;lsquo;리더십&amp;rsquo; 역량에 대한 저의 생각과 고민을 이야기해보려고 합니다.
+일반적으로 조직 내의 리더십은 &amp;lsquo;리더&amp;rsquo; 혹은 &amp;lsquo;매니저&amp;rsquo;에게만 국한되는 역량으로 생각하기 쉽습니다. 물론, 채용 과정에서 리더십 경험에 대해 묻기도 하지만, 실제로 조직에서 직책자를 맡고 있지 않은 이상, 리더십이 딱히 내 직무에 중요한 역량이라고 인지하고 있는 사람들이 상대적으로 많지 않아 보인다는 것이죠.
+개발 조직에서는 어떨까요? 각 실무자는 실무에만 집중하고, 리더십은 팀장, 실장, 임원에게만 필요한 덕목일까요?</description>
+    </item>
     
     <item>
       <title>요기요 Android 개발 Git Branch와 Release Planning</title>

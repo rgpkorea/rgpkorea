@@ -7,7 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-KR</language>
     <copyright>Copyright © RGP Korea. All Rights Reserved.</copyright>
-    <lastBuildDate>Fri, 02 Mar 2018 10:05:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 16 Mar 2018 01:07:00 +0000</lastBuildDate>
     
 	<atom:link href="https://rgpkorea.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
@@ -15,7 +15,7 @@
     <item>
       <title>Blog</title>
       <link>https://rgpkorea.github.io/tags/blog/</link>
-      <pubDate>Fri, 02 Mar 2018 10:05:00 +0000</pubDate>
+      <pubDate>Fri, 16 Mar 2018 01:07:00 +0000</pubDate>
       
       <guid>https://rgpkorea.github.io/tags/blog/</guid>
       <description></description>
@@ -69,7 +69,7 @@
     <item>
       <title>Rgp</title>
       <link>https://rgpkorea.github.io/tags/rgp/</link>
-      <pubDate>Fri, 02 Mar 2018 10:05:00 +0000</pubDate>
+      <pubDate>Fri, 16 Mar 2018 01:07:00 +0000</pubDate>
       
       <guid>https://rgpkorea.github.io/tags/rgp/</guid>
       <description></description>
@@ -78,7 +78,7 @@
     <item>
       <title>Scrum</title>
       <link>https://rgpkorea.github.io/tags/scrum/</link>
-      <pubDate>Fri, 02 Mar 2018 10:03:00 +0000</pubDate>
+      <pubDate>Fri, 16 Mar 2018 01:07:00 +0000</pubDate>
       
       <guid>https://rgpkorea.github.io/tags/scrum/</guid>
       <description></description>
@@ -94,18 +94,45 @@
     </item>
     
     <item>
+      <title>Squad</title>
+      <link>https://rgpkorea.github.io/tags/squad/</link>
+      <pubDate>Fri, 16 Mar 2018 01:07:00 +0000</pubDate>
+      
+      <guid>https://rgpkorea.github.io/tags/squad/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Tech</title>
       <link>https://rgpkorea.github.io/tags/tech/</link>
-      <pubDate>Fri, 02 Mar 2018 10:05:00 +0000</pubDate>
+      <pubDate>Fri, 16 Mar 2018 01:07:00 +0000</pubDate>
       
       <guid>https://rgpkorea.github.io/tags/tech/</guid>
       <description></description>
     </item>
     
     <item>
+      <title>개발리더십</title>
+      <link>https://rgpkorea.github.io/tags/%EA%B0%9C%EB%B0%9C%EB%A6%AC%EB%8D%94%EC%8B%AD/</link>
+      <pubDate>Fri, 16 Mar 2018 01:07:00 +0000</pubDate>
+      
+      <guid>https://rgpkorea.github.io/tags/%EA%B0%9C%EB%B0%9C%EB%A6%AC%EB%8D%94%EC%8B%AD/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>리더십</title>
+      <link>https://rgpkorea.github.io/tags/%EB%A6%AC%EB%8D%94%EC%8B%AD/</link>
+      <pubDate>Fri, 16 Mar 2018 01:07:00 +0000</pubDate>
+      
+      <guid>https://rgpkorea.github.io/tags/%EB%A6%AC%EB%8D%94%EC%8B%AD/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>배달통</title>
       <link>https://rgpkorea.github.io/tags/%EB%B0%B0%EB%8B%AC%ED%86%B5/</link>
-      <pubDate>Fri, 02 Mar 2018 10:05:00 +0000</pubDate>
+      <pubDate>Fri, 16 Mar 2018 01:07:00 +0000</pubDate>
       
       <guid>https://rgpkorea.github.io/tags/%EB%B0%B0%EB%8B%AC%ED%86%B5/</guid>
       <description></description>
@@ -114,7 +141,7 @@
     <item>
       <title>요기요</title>
       <link>https://rgpkorea.github.io/tags/%EC%9A%94%EA%B8%B0%EC%9A%94/</link>
-      <pubDate>Fri, 02 Mar 2018 10:05:00 +0000</pubDate>
+      <pubDate>Fri, 16 Mar 2018 01:07:00 +0000</pubDate>
       
       <guid>https://rgpkorea.github.io/tags/%EC%9A%94%EA%B8%B0%EC%9A%94/</guid>
       <description></description>
