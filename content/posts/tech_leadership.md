@@ -97,10 +97,10 @@ RGP Korea 기술연구소에서는 2017년 11월부터 스쿼드(Squad: Full-sta
 김나리, Scrum Master @RGP Korea
 
 [sticky-note-to-ship-code]:
-../images/tech_leadership/sticky-note-to-ship-code.JPG
+../images/tech_leadership/sticky-note-to-ship-code.jpg
 
 [pexels-photo-209712]:
-../images/tech_leadership/pexels-photo-209712.JPEG
+../images/tech_leadership/pexels-photo-209712.jpeg
 
 [RGP_Squad_s]:
 ../images/tech_leadership/RGP_Squad_s.JPG
