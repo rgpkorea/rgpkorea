@@ -1,11 +1,11 @@
 ---
 title: 개발 조직에서의 리더십 - Practice and Mindset
-description: '팀원'들의 리더십은 어떻게 성장시켜 나갈 수 있을까?
+description: "'팀원'들의 리더십은 어떻게 성장시켜 나갈 수 있을까?"
 author: 김나리
 image: post-bg.jpg
 images: ["../images/tech_leadership/sticky-note-to-ship-code.JPG", "../images/tech_leadership/pexels-photo-209712.JPEG", "../images/tech_leadership/RGP_Squad_s.JPG"]
 tags: ["rgp", "tech", "blog", "요기요", "배달통", "scrum", "squad", "리더십", "개발리더십"]
-date: 2018-03-16T12:07:00+00:00
+date: 2018-03-16T01:07:00+00:00
 type: post
 draft: false
 comments: true
