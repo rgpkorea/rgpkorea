@@ -5,9 +5,9 @@ author: 신범철
 image: post-bg.jpg
 images: ["../images/blog-making-review/static-site-generators-cover.jpg"]
 tags: ["rgp", "tech", "blog", "요기요", "배달통", "jekyll", "hugo", "github page", "static website generator"]
-date: 2018-03-10T18:37:04+09:00
+date: 2018-05-23T18:37:04+09:00
 type: post
-draft: true
+draft: false
 comments: true
 ---
 
