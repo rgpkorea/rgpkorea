@@ -7,10 +7,21 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-KR</language>
     <copyright>Copyright © RGP Korea. All Rights Reserved.</copyright>
-    <lastBuildDate>Fri, 16 Mar 2018 01:07:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 23 May 2018 18:37:04 +0900</lastBuildDate>
     
 	<atom:link href="https://rgpkorea.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>기술 블로그 제작 후기</title>
+      <link>https://rgpkorea.github.io/posts/blog-making-review/</link>
+      <pubDate>Wed, 23 May 2018 18:37:04 +0900</pubDate>
+      
+      <guid>https://rgpkorea.github.io/posts/blog-making-review/</guid>
+      <description>안녕하세요, 테크 본부에서 배달통 iOS개발을 맡고있는 신범철입니다.
+기술 블로그를 준비한다는 소식을 공식적으로 작년 말에 접하게 되었고, 여러 조직원들이 기고에 참여하게 되었습니다. 운영 방식과 주제, 디자인 등에 대한 활발한 토론이 진행 되었고, 저는 이 모든것을 지켜보기만 하는 제 3자의 위치에 있었습니다.
+그러던 중 UX Lab에서 저와 같은 서비스를 만들고 있는 제 아내가 블로그 디자인을 맡게 되었습니다. 저는 여전히 응원을 해 주는 위치에 머물러 있었고 끝까지 그러려고 하였습니다.(성격상 앞에 나서거나 어딘가에 소속되어 있는것을 별로 좋아하지 않아요.</description>
+    </item>
     
     <item>
       <title>개발 조직에서의 리더십 - Practice and Mindset</title>

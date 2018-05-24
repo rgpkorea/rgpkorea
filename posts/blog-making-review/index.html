@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="ko-KR"  prefix="og: http://ogp.me/ns#">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="개발자와 디자이너 부부의 첫 공식 작업">
+    <meta name="author" content="신범철">
+    <meta name="keywords" content="rgp, tech, blog, 요기요, 배달통, jekyll, hugo, github page, static website generator">
+
+
+    <title>기술 블로그 제작 후기 -- RGP Tech Blog</title>
+
+    
+
+    
+    <meta property="og:title" content="기술 블로그 제작 후기">
+<meta property="og:description" content="개발자와 디자이너 부부의 첫 공식 작업 알지피 코리아인 지식공유 공간">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://rgpkorea.github.io/posts/blog-making-review/">
+
+
+<meta property="og:image" content="https://rgpkorea.github.io/posts/blog-making-review/../images/blog-making-review/static-site-generators-cover.jpg" />
+
+
+
+
+    
+    <link href="https://rgpkorea.github.io/css/bootstrap.min.css" rel="stylesheet">
+
+    
+    <link href="https://rgpkorea.github.io/css/clean-blog.min.css" rel="stylesheet">
+    <link href="https://rgpkorea.github.io/css/rgp-blog.css" rel="stylesheet">
+
+    
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='//fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="https://rgpkorea.github.io/css/nanumsquare.css">
+
+    
+    
+    
+
+</head>
+
+<body>
+
+    
+    <nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+        <div class="container-fluid">
+            
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+		  <span class="menu" style="background-image: url('https://rgpkorea.github.io/img/menu.png')"></span>
+                </button>
+		<a class="navbar-brand" href="https://rgpkorea.github.io/">
+		  <span class="logo" style="background-image: url('https://rgpkorea.github.io/img/logo.svg');"></span>
+		  <span class="logo-color" style="background-image: url('https://rgpkorea.github.io/img/logo-color.svg');"></span>
+		</a>
+            </div>
+
+                       
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    
+                    <li>
+                        <a href="https://rgpkorea.github.io/">Home</a>
+                    </li>
+                    
+                    <li>
+                        <a href="https://rgpkorea.github.io/posts/">Posts</a>
+                    </li>
+                    
+                    <li>
+                        <a href="https://rgpkorea.github.io/interview/">Interview</a>
+                    </li>
+                    
+                  </ul>
+            </div>
+           
+
+        </div>
+        
+    </nav>
+
+
+    
+    
+    <header class="intro-header" style="background-image: url('https://rgpkorea.github.io/img/post-bg.jpg')">
+      
+      <div class="container">
+        <div class="row">
+           <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+             <div class="post-heading">
+               <h1>기술 블로그 제작 후기</h1>
+	       <hr class="small">
+               <h2 class="subheading">개발자와 디자이너 부부의 첫 공식 작업</h2>
+               <span class="meta">
+                 May 23, 2018, written by 신범철
+
+
+               </span>
+             </div>
+	         <div class="share">
+        
+            <a class="icon-twitter" href="https://twitter.com/share?text=%ea%b8%b0%ec%88%a0%20%eb%b8%94%eb%a1%9c%ea%b7%b8%20%ec%a0%9c%ec%9e%91%20%ed%9b%84%ea%b8%b0&url=https%3a%2f%2frgpkorea.github.io%2fposts%2fblog-making-review%2f"
+                onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+                <i class="fa fa-twitter"></i>
+                <span class="hidden">Twitter</span>
+            </a>
+        
+
+        
+            <a class="icon-facebook" href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2frgpkorea.github.io%2fposts%2fblog-making-review%2f"
+                onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+                <i class="fa fa-facebook"></i>
+                <span class="hidden">Facebook</span>
+            </a>
+        
+
+        
+            <a class="icon-google-plus" href="https://plus.google.com/share?url=https%3a%2f%2frgpkorea.github.io%2fposts%2fblog-making-review%2f"
+              onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
+              <i class="fa fa-google-plus"></i>
+                <span class="hidden">Google+</span>
+            </a>
+        
+        
+            <a class="icon-linkedin" href="https://www.linkedin.com/shareArticle?mini=true&title=%ea%b8%b0%ec%88%a0%20%eb%b8%94%eb%a1%9c%ea%b7%b8%20%ec%a0%9c%ec%9e%91%20%ed%9b%84%ea%b8%b0&url=https%3a%2f%2frgpkorea.github.io%2fposts%2fblog-making-review%2f&summary=%ea%b0%9c%eb%b0%9c%ec%9e%90%ec%99%80%20%eb%94%94%ec%9e%90%ec%9d%b4%eb%84%88%20%eb%b6%80%eb%b6%80%ec%9d%98%20%ec%b2%ab%20%ea%b3%b5%ec%8b%9d%20%ec%9e%91%ec%97%85"
+               onclick="window.open(this.href, 'linkedin-share', 'width=554,height=481');return false;">
+               <i class="fa fa-linkedin"></i>
+               <span class="hidden">LinkedIn</span>
+            </a>
+        
+    </div>
+
+           </div>
+        </div>
+      </div>
+    </header>
+
+    
+    <article>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                  
+
+<p>안녕하세요, 테크 본부에서 배달통 iOS개발을 맡고있는 신범철입니다.</p>
+
+<p>기술 블로그를 준비한다는 소식을 공식적으로 작년 말에 접하게 되었고, 여러 조직원들이 기고에 참여하게 되었습니다. 운영 방식과 주제, 디자인 등에 대한 활발한 토론이 진행 되었고, 저는 이 모든것을 지켜보기만 하는 제 3자의 위치에 있었습니다.</p>
+
+<p>그러던 중 UX Lab에서 저와 같은 서비스를 만들고 있는 제 아내가 블로그 디자인을 맡게 되었습니다. 저는 여전히 응원을 해 주는 위치에 머물러 있었고 끝까지 그러려고 하였습니다.(성격상 앞에 나서거나 어딘가에 소속되어 있는것을 별로 좋아하지 않아요.) 하지만 모든 진행상황을 옆에서 다 전해 듣고 있자니 마냥 가만히 있을 수가 없어 이런 저런 조언을 해 주었고, 그러다 보니 (늦었지만) 이렇게 제작 후기까지 남기게 되었습니다.</p>
+
+<h1 id="갑작스러운-참여">갑작스러운 참여</h1>
+
+<p>초기 기획 단계부터 참여한게 아니였기에, 어느 정도는 정해져 있는 상태에서 작업 방향을 제시할 수 밖에 없는 상황이였습니다. 다행히도 제가 선호하는 GitHub Page + Static Website 조합으로 블로그 frame work이 결정 되었기에 제작 의뢰(?)를 좀더 수월하게 받아들일 수 있었습니다. 그럼에도 갑자기 뛰어든 만큼 여러가지 고민이 있을 수 밖에 없었고 빠르고 정확하게 의사 결정을 해야 했기 때문에 기존에 이미 결정된 사항들을 일부 바꾸면서 진행할 수 밖에 없었습니다. 그중에서도 가장 큰 부분은 frame work을 변경하게 된 것인데, 제가 이런 결정을 하게 된 이유나 배경, 그리고 간략하게나마 Static Website 구성 방법에 대해 설명 해 보고자 합니다.</p>
+
+<hr />
+
+<h1 id="frame-work-선택">Frame Work 선택</h1>
+
+<p>일반적으로 우리가 많이 접하게 되는 웹 페이지들은, 특정 저장소에 있는 컨텐츠를 템플릿 웹 페이지에 얹혀서 화면에 뿌려주는 식으로 구성하게 됩니다. 이를 소위 dynamically generated site 라고 불리우는데, 이는 블로그와 같이 컨텐츠 위주의 웹 페이지를 구성함에 있어서 몇가지 불편함이 있습니다.</p>
+
+<p>첫째, 시스템 구성이 필요 이상으로 복잡해 집니다.</p>
+
+<p>기본적으로 화면에 보여주야 하는 웹 페이지를 위해서 웹 서버가 필요하고, 거기에 추가로 컨텐츠를 저장하기 위한 별도의 저장소가 필요하게 됩니다. 이 저장소를 위해서 작게는 별도의 파일을 이용할 수도 있고, 크게는 데이타베이스 서버를 별도 운용할 수도 있습니다. 무엇이 되었든 웹 서버와 컨텐츠를 제공하는 시스템 사이에 여러가지 상호관계를 생각하지 않을 수 없고, 이런 관리 포인트들이 하나 둘 늘어나는 것이 결국 웹 페이지를 지속적으로 유지하게 하는데 걸림돌이 될 수 있습니다.</p>
+
+<p>둘째, 새로운 컨텐츠를 추가하기가 번거롭 습니다.</p>
+
+<p>블로그 사이트는 글 특성상 컨텐츠에 스타일이 포함되어 있습니다. 그렇다는 것은 컨텐츠를 저장소에 저장할 때 단순 텍스트만 저장 할 수는 없다는 것입니다. 속성이 포함된 컨텐츠를 작성하기 위해서는 별도의 텍스트 에디팅이 필요하고 컨텐츠 추가를 위한 기능을 따로 구현해 두어야만 합니다. 게다가 HTML - CSS 로 구성된 스타일은 자칫 글로벌 속성등에 의해 덮어 씌워지거나 변조될 수 있다는 위험요소가 존재합니다. 그래서 요즘은 마크다운 등으로 형식을 미리 정의 해 둔 문서에 일정한 스타일을 입혀서 표현하는 방법을 많이 이용하는 편입니다. 마크다운으로 글을 적성하게 되면 컨텐츠를 작성하기 위한 별도의 기능 구현은 필요가 없어 지는 것이겠지요.</p>
+
+<h3 id="static-website-generator">Static Website Generator</h3>
+
+<p>마크다운을 이용하여 웹 사이트를 구현하려는 방법들이 많이 시도 되었고, 결국엔 Static Website Generator(이하 SWG) 라는 방식이 나오게 되었습니다. 어떻게 보면 url의 주소가 곧 html 파일의 위치가 되는 방식이 좀 더 구식인듯 보이지만, &ldquo;Generator&rdquo;라는 이름이 붙은 만큼 이러한 구조를 직접 구성하는게 아닌, 마크다운 파일만 작성하면 알아서 웹사이트 구조를 생성해 주는 방식으로 구현하게 됩니다. 조금더 구체적으로는  레이아웃을 구성하는 부분과 템플릿 스타일만 미리 정의 해 두면, 새로운 글을 추가 할 시에는 마크다운 파일만을 작성하면 generator가 미리 정의된 스타일이 입혀진 HTML 파일로 재 생성해 주는 방식입니다.</p>
+
+<p>이 방식은 위에서 언급한 dynamic 방식에서 나타나는 유지보수의 어려움과 글 쓰기의 번거로움 등의 단점들을 극복하였고, 또한 호스팅 조차도 별도의 서버 세팅 없이 비교적 매우 간단하게 할 수 있게 되었습니다. 게다가 가장 인기있는 소스코드 저장소인 GitHub에서 제공하는 웹호스팅 서비스인 github page에서 &ldquo;jekyll&rdquo;이라는 SWG를 공식적으로 지원하게 되면서 기존에 블로그를 운영하던 사람들 뿐 아니라 블로그를 운영하고 싶었지만 진입 장벽때문에 접근하지 못하던 사람들 까지 달려들어 소위 SWG의 붐이라고 볼 수 있을 정도로 화제가 되었습니다.</p>
+
+<h3 id="jekyll-vs-hugo">jekyll vs. HUGO</h3>
+
+<p>github에서는 &ldquo;jekyll&rdquo;을 공식 지원 하고 있지만, SWG 세계에는 이외에도 &ldquo;HUGO&rdquo;라는 것까지 총 두가지의 선두주자가 이끌어 가고 있습니다. 두가지 다 뛰어난 frame work이고 사실 크게 차이가 없지만, 사용성, 테마, 확장성 등의 기준에서 여러가지 장단점들을 비교한 뒤 하나를 선택해 보기로 하였습니다. (사실 저같은 경우 개인 블로그를 만들 당시 주변에서 도움을 주신 지인이 모두 &ldquo;HUGO&rdquo;를 추천해 주셔서 이미 사용하고 있었기 때문에 어느정도 편파적인 감정을 포함해서 판단을 내린 점을 미리 고백합니다.)</p>
+
+<p><img src="../images/blog-making-review/static-site-generators-cover.jpg" alt="Static-Site-Generator" /></p>
+
+<h4 id="시작하기">시작하기</h4>
+
+<p>설치하고 사용하는 등의 작업방법은 둘 다 command line을 이용하도록 요구되고 있습니다. 기본적으로 개발쟁이 들에게는 매우 익숙하고 편리한 방법일 테지만, 그렇지 않은 대부분의 사람들에게는 처음부터 큰 장애물이라고 느껴 질 수 있습니다.</p>
+
+<p>설치는 둘 다 매우 간단하게 할 수 있도록 만들어져 있지만, &ldquo;jekyll&rdquo;은 RubyGems으로 설치를 해야 하고, &ldquo;HUGO&rdquo;는 단일 설치 패키지를 제공해 준다는 점에서 후자가 좀 더 편리하다고 할 수 있겠습니다. RubyGems으로 설치를 한다는 것은 설치를 하려는 컴퓨터에 미리 ruby가 설치되어 있는 등의 환경이 갖추어져 있어야 한다는 이야기이며, ruby의 환경 세팅은 악명 높기로 유명합니다.</p>
+
+<p>설치가 된 이후의 동작은 두 방식 다 차이가 없을 정도로 비슷하다고 볼 수 있기에 시작하기 측면에서는 &ldquo;HUGO&rdquo;의 손을 들어 줄 수 있을 것 같습니다.</p>
+
+<h4 id="테마">테마</h4>
+
+<p>설치를 하고 나면 &ldquo;jekyll&rdquo;에서는 기본적으로 제공되는 테마가 있는 반면, &ldquo;HUGO&rdquo;에서는 그렇지 않기 때문에 설치를 하자 마자 바로 특정 테마를 설치하는 절차를 거쳐야 합니다. 하지만 어누 누구도 자신의 블로그에 기본 테마를 사용하고 싶어하는 사람은 없을 거라고 단언할 수 있기 때문에, 이 과정은 사실 결국 두 frame work에 공통적인 과정이라고 할 수 있습니다.</p>
+
+<p>테마의 종류는 둘다 우열을 가리기 힘들 정도로 다양하게 준비되어 있습니다. 심지어는 양쪽다 존재하는 테마도 많이 있지요. (제가 회사 기술 블로그 만들기 프로젝트에 중간부터 참여를 했지만 jekyll로 결정된 부분을 변경할 수 있었던 이유도 하고자 했던 테마가 양쪽 다 존재 하고 있었던 점도 크게 작용 했습니다.)</p>
+
+<p>테마를 적용하는 방법에서는 한번더 &ldquo;HUGO&rdquo;의 손을 들어 줄 수 밖에 없을 듯 합니다. 둘다 테마의 소스코드를 GitHub 저장소에서 관리가 되는데, &ldquo;HUGO&rdquo;의 경우는 해당 테마를 Git의 Submodule을 이용해 쉽게 추가 제거 변경이 가능 한 반면, &ldquo;jekyll&rdquo;같은 경우에는 테마가 Gemfile과 같이 제공이 되는 경우가 많아 RubyGems 번들을 사용하여 테마를 확인하는 추가 단계가 있습니다. 이 번들링 단계는 상대적으로 번거로운 작업이며, 시작하기 부분에서 언급하였듯 ruby환경이라는 큰 장벽이 발목을 잡을 수 있습니다.</p>
+
+<h4 id="사용하기">사용하기</h4>
+
+<p>새로운 파일을 추가하고 수정하고, 로컬에서 가상의 서버를 돌려 브라우져에서 확인 하고, 최종적으로 완성된 글들을 발행 하는 등의 사용법 측면에서 봤을 때에는 두 frame work 모두 사용하기 편리하고 간편하게 기능을 제공하고 있습니다. 일반적인 수준으로 사용하는데 있어서는 거의 비슷한 사용성을 보여주고 있습니다. 우열을 가리는게 의미가 없다고 할 수 있겠죠.</p>
+
+<h4 id="확장성">확장성</h4>
+
+<p>이번에는 처음으로 &ldquo;jekyll&rdquo;의 손을 들어 줄 수 있을거 같습니다. &ldquo;jekyll&rdquo;은 플러그인 API를 제공하며, 그것을 이용해 많은 편의 기능이 만들어 져 있는 반면 &ldquo;HUGO&rdquo;는 플러그인 기능이 존재하지 않죠. 수많은 코드 조각들을 이용하거나 커스터 마이징 된 기능들을 공유하고 적용하는데 있어서는 플러그인이 있는 &ldquo;jekyll&rdquo;이 확실히 편하기는 합니다만, 간단한 블로그를 만드는데있어서 그러한 고급 기능들이 과연 얼마나 유용할 지는 저는 사실 아직 잘 모르겠습니다. 하지만 어쨌든 그러한 기능 제공을 해준다는 것은 확실히 장점이라고 할 수 있어 보입니다.</p>
+
+<h4 id="최종결정">최종결정</h4>
+
+<p>사실 비교 자체에 큰 의미가 없을 정도로 두 frame work은 상당히 유사하다고 할 수 있습니다. 하지만 SWG로 블로그를 만드는 이유가 바로 낮은 진입장벽 때문이다 라는 점을 생각 해 볼때 비교적 더 진입장벽이 낮은 &ldquo;HUGO&rdquo;를 선택하는 편이 좀더 괜찮은 선택이 아닐까 하는 생각을 해 봅니다. 거기다가 우리 블로그 팀에는 맥이나 리눅스 사용자 뿐 아니라 윈도우 사용자도 있는데(심지어 비 개발자 입니다), ruby의 복잡한 환경 설정은 너무나도 높은 벽이 아닐 수 없습니다.</p>
+
+<p>결론은 휴고. (기고를 쉬고싶다&hellip; 농담입니다 :)</p>
+
+<hr />
+
+<h1 id="고난과-역경">고난과 역경</h1>
+
+<p>&ldquo;HUGO&rdquo;에서 수많은 편의 기능을 제공 해 주고 이를 이용해 블로그를 서비스 해 본 경험이 있었지만, 그럼에도 불구하고 여러가지 어려운 점은 존재하였습니다. 이러한 점을 공유하여 이글을 읽으시는 많은 분들이 똑같은 어려움을 겪지 않았으면 하는 마음입니다.</p>
+
+<h3 id="커스터마이징">커스터마이징</h3>
+
+<p>개인 블로그가 아닌 회사의 블로그를 만드는 이상, 테마가 있더라도 있는 그데로 사용할 수는 없었습니다. 기본적인 스타일 변경 뿐 아니라 레이아웃이나 메뉴 갯수 등 많은 부분에 있어서 커스터마이징이 이루어 졌습니다.</p>
+
+<p><img src="../images/blog-making-review/layout-original.png" alt="Layout-Original" /></p>
+
+<p>테마에서 레이아웃 별로 html 파일이 나누어 져 있긴 하지만, 그 파일의 일부만 수정하는것은 불가능 하였기 때문에 파일을 통째로 덮어 써야만 수정을 할 수 있습니다. 디자인에서 요구하는 레이아웃 수정은 아주 일부분이였지만 결국엔 거의 모든 레이아웃 파일을 overwrite하게 되었습니다.</p>
+
+<p><img src="../images/blog-making-review/layout-overwrited.png" alt="Layout-Overwrited" /></p>
+
+<p>레이아웃 파일은 overwrite를 하더라도 어느정도 감당할 수 있는 수준이지만 css는 그렇지가 않았습니다. css는 특성상 override가 매우 빈번하고 사이드 이팩트가 매우 쉽게 발생할 수 있는 구조이기 때문에, 이미 완성되어 있는 스타일의 일부만 수정한다는 것이 생각처럼 간단한 문제는 아니였습니다. 공통 레이아웃의 영역이지만 특정 화면에서만 조금 다르게 보여주기 위해 별도의 클래스가 존재 한다거나, 그 반대로 서로 다른 레이아웃인데 공통의 클래스를 사용하는 경우 등등, 수 많은 상황들에서 어떤 요소가 적용 되는지를 하나하나 살펴 봐야 만 했습니다. 게다가 미디어쿼리(<a href="https://www.w3schools.com/css/css3_mediaqueries_ex.asp">Media Queries</a>)를 이용해 4가지 서로 다른 화면 너비를 대응하고 있기 때문에 그 복잡도는 네배가 되었습니다. 덕분에 더욱더 세밀하고 꼼꼼한 디자인 QA가 필요했었고 저의 아내님께서 굉장히 수고해 주셨습니다.</p>
+
+<p>또한 윈도우 환경이라는 변수가 있었는데, 웬만한 레이아웃 치팅은 기존 테마에서 미리 처리해 놓은 관계로 특별히 고생하지는 않았지만, 폰트를 적용하는 과정에서 약간의 번거로움이 발생하였습니다.</p>
+
+<p><img src="../images/blog-making-review/font-css.png" alt="Font-CSS" /></p>
+
+<p>맥에서는 트루폰트만 명시해 줘도 잘 적용되는 반면 윈도우에서는 eot나 woff등의 다른 타입을 우선 명시해 줘야 한다는 점을 몰랐던 저는 해당 문제를 해결하기 위해 웹폰트 등의 다른 방법을 찾아 봐야 하는것인가 하는 고민을 했었지만, 다행히 웹프론트 개발팀 &ldquo;예리&rdquo;님의 도움을 받아 올바른 해결책을 찾아 낼 수 있었습니다.</p>
+
+<h3 id="노출">노출</h3>
+
+<p>블로그 등의 사이트를 처음 발행하고 나면 당연히도 독자들에게 노출될 수 있는 기회가 매우 부족하게 됩니다. 그래서 초기에 사이트를 어느정도 홍보를 해야 하는데, 그러기 위해서는 노출 될 채널 별 대응을 적절히 해 주어야 합니다.</p>
+
+<p>일례로 가장 적극적으로 쓰일 페이스북 같은경우 오픈그래프(<a href="http://ogp.me">The Open Graph protocol</a>)에서 필요로 하는 메타테그를 충실히 구현해 주지 않으면 미리보기 등의 링크가 매우 형편없이 나오게 됩니다. 페이스북에서는 <a href="https://developers.facebook.com/tools/debug/">Sharing Debugger</a>라고해서 오픈그래프를 테스트하는 기능을 제공해 주고 있으니 사이트 발행 전 반드시 점검해 봐야 합니다. 저같은 경우도 나름 해당 메타데이타를 챙기긴 했으나 상기 테스트 사이트에서 점검을 하지 않은 탓에 한동안 페이스북 공유링크에 이미지가 제대로 보여지지 않은 문제가 있었습니다.</p>
+
+<p><img src="../images/blog-making-review/facebook.png" alt="Facebook" /></p>
+
+<blockquote>
+<p>페이스북에 멋진 공유 링크를 만들고 싶다면 <a href="http://ogp.me">Open Graph</a>를 잘 이용하도록 합니다.</p>
+</blockquote>
+
+<p>페이스북보다도 어떻게 보면 더 중요하다고 볼수 있는게 구글 검색시 노출되는 결과물이라고 할수 있을것입니다. 시간이 지나면 구글봇이 알아서 사이트의 내용을 긁어 가기는 하지만, 좀더 빠른 시간에 좀더 정확히 구글 봇이 활동하기를 원한다면 구글 웹마스터즈 (<a href="https://www.google.com/webmasters">Webmasters</a>)에 있는 검색 콘솔 등에 사이트 정보를 제공 해 주어 사이트의 구조를 파악하기 쉽게 도와주어야 합니다.</p>
+
+<p><img src="../images/blog-making-review/google-search-console.png" alt="Google-Search-Console" /></p>
+
+<blockquote>
+<p>Google Search Console에 사이트의 색인 정보 제공을 통해 분석된 모습입니다.</p>
+</blockquote>
+
+<h3 id="업무와-병행">업무와 병행</h3>
+
+<p>사실 가장 힘들었던 점은 그 어떤 기술적인 부족함 때문이 아니라 업무와 병행하면서 블로그를 제작해야 한다는 점이였습니다. 하필이면 블로그 제작 당시 진행중이던 배달통 프로젝트가 역사적으로 손에 꼽힐 정도의 큰 프로젝트였는데다가 거의 혼자서 담당하게 되면서 일과시간에는 도저히 블로그제작에 시간을 쓸수가 없는 상황이였습니다. 그래서 어쩔수 없이 업무 후 아니면 주말에 진행을 할 수밖에 없었는데, 그나마 아내가 디자인을 맡아서 집에서도 무리없이 진행 할 수 있었기에 큰 탈 없이 마무리 지을 수 있었습니다. (물리적인 시간이 부족하지는 않았으나, 소위 말하는 컨택스트 스위칭이 너무 힘들어 업무시간에는 업무만 하는게 최선이라는 생각을 다시금 하게되는 계기가 되었습니다.)</p>
+
+<hr />
+
+<h1 id="앞으로">앞으로&hellip;</h1>
+
+<p>엉겁결에 프로젝트에 참여해서 급하게 마무리 지은 느낌이 있지만 부부동반으로 진행한 공식 첫 프로젝트 이기도 하고 회사의 이미지 향상을 위한 막중한 책임이 함께하는 프로젝트에 공헌한다는 사명감을 갖고 임했기 때문에 나름 애정이 가는 프로젝트였습니다. 그래서 이렇게 후기까지 장문의 포스팅을 통해 남기게 되었고 더욱 흥하기 위해 앞으로 더 해야 할 것과 바람들을 정리 해 보았습니다.</p>
+
+<h3 id="배포">배포</h3>
+
+<p>현재는 배포를 수동으로 진행하고 있습니다. 물론 미리 작성해둔 스크립트 파일이 있어서 한번 실행으로 바로 배포가 되긴 하지만, 모든 사람이 배포를 진행하게 되면 위험한 상황이 생길 수 있어 배포자를 저 아니면 기술블로그 담당자분이 하기로 정했습니다. 하지만 제가 작성한 스크립트가 윈도우에서는 작동을 하지 않아 결국 제가 혼자 배포를 하고 있는 상황이죠.</p>
+
+<p>스크립트를 다시 작성하는 방법도 있겠지만, 그보다는 CI를 적용하여 자동 배포를 하게 하려고 합니다. 아직은 구상단계 이긴 하지만 적절한 깃 전략과 함께 시중에 있는 무료 CI 서비스를 이용해 볼까 생각 중입니다.</p>
+
+<h3 id="기고">기고</h3>
+
+<p>깃헙 페이지를 이용해서 블로그를 운영 하기로 한 이유 중 하나가 바로 포스팅 작성자가 직접 커밋을 통해 글을 업로드 할 수 있기 때문 이였습니다. 하지만 글을 올린다고 해도 그 글을 검수 하는 과정을 중간에 추가해야 하는데, 그 역할을 쉽게 할 수 있는것이 바로 깃헙의 Pull Request 기능입니다.</p>
+
+<p>일반적인 개발 프로젝트의 깃 전략처럼 배포 전용 브랜치에 PR을 날려 검수(code review)와 함께 배포(release)까지 진행 될 수 있도록 할 계획입니다. 이는 조만간 진행하게 될 블로그 공모전에도 매우 유용하게 쓰일 것으로 생각되고, 언젠가는 회사 외부인도 자유롭게 기고를 할수 있게 기회를 제공해 주는것도 기대해 볼 수 있습니다.</p>
+
+<h3 id="바람">바람</h3>
+
+<p>단 한가지의 바람이 있다면 당연히 힘들게 만든 이 블로그가 흥했으면 하는 것입니다.</p>
+
+<p>기술 블로그 라는 것이 생각보다 포스팅 하기가 쉽지 않고 게다가 회사의 기술 블로그라는 점에 있어서는 더욱 부담이 되는 것이 사실입니다. 그럼에도 불구하고 가능한한 많은 조직원들이 참여를 해서 자신의 역량과 잠재력을 과시 할 수 있었으면 좋겠고, RGP Korea가 기술적으로 많이 성숙한 회사라는 점을 대외적으로 알릴 수 있는 창구가 되었으면 하는 바람이 있습니다.</p>
+
+<hr />
+
+<p>지금까지 미흡하지만 제작 후기를 작성해 보았는데요, 저 역시도 포스팅 경험이 많이 없기 때문에 분량 조절도 실패하고 내용적인 면도 많이 부족한 모습이 보여 집니다. 하지만 쓰기 라는 행위를 통해 그동안 머리속에만 존재하는 어떤 것들을 정리 하고 시각화 할 수 있기 때문에, 제가 아는것과 모르는 것을 분명하게 구분 할 수 있고 그로인해 앞으로 해야 할 것이 무언인지 명확하게 나타낼 수 있게 됨으로 써 포스팅의 장점을 몸소 체험할 수 있는 좋은 기회였습니다.</p>
+
+<p>여러분도 포스팅을 통해 성장하는 자신의 모습을 보고 싶으시다면 지금 당장 김나리(nari.kim@rgpkorea.co.kr)님께 연락 주시기 바랍니다.</p>
+
+<p>그동안 긴글 읽어 주셔서 고맙습니다 : ]</p>
+
+                  
+   <div id="disqus_thread"></div>
+<script>
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "rgp-tech-blog" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+                </div>
+            </div>
+        </div>
+    </article>
+
+    
+    <footer class="footer-post">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                  <ul class="list-inline">
+                    <li>
+                      <a href="https://rgpkorea.recruiter.co.kr" target="_blank">
+			  Career
+                      </a>
+                    </li>
+		    <li>
+		      <span>&#124;</span>
+		    </li>
+                    <li>
+                      <a href="https://www.deliveryhero.com" target="_blank">
+			  Delivery Hero Global Network
+                      </a>
+                    </li>
+                  </ul>
+                  <p class="copyright text-muted">Copyright © RGP Korea. All Rights Reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    
+    <script src="https://rgpkorea.github.io/js/jquery.min.js"></script>
+
+    
+    <script src="https://rgpkorea.github.io/js/bootstrap.min.js"></script>
+
+    
+    <script src="https://rgpkorea.github.io/js/clean-blog.js"></script>
+
+    
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-115391384-1', 'auto');
+ga('send', 'pageview');
+</script>
+
+
+</body>
+
+</html>
+
