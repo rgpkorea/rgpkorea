@@ -7,7 +7,7 @@ images: ["../images/squad_retrospective_2018H1/undraw_development_ouy3.PNG", "..
 tags: ["rgp", "tech", "blog", "요기요", "배달통", "squad"]
 date: 2018-06-05T16:00:00+00:00
 type: post
-draft: true
+draft: false
 comments: true
 ---
 
