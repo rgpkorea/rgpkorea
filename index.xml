@@ -7,10 +7,22 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-KR</language>
     <copyright>Copyright © RGP Korea. All Rights Reserved.</copyright>
-    <lastBuildDate>Wed, 23 May 2018 18:37:04 +0900</lastBuildDate>
+    <lastBuildDate>Tue, 05 Jun 2018 16:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://rgpkorea.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Squad 2018 상반기 회고 - 공감대 형성, 그리고 3 Month Rule</title>
+      <link>https://rgpkorea.github.io/posts/squad_retrospective_2018h1/</link>
+      <pubDate>Tue, 05 Jun 2018 16:00:00 +0000</pubDate>
+      
+      <guid>https://rgpkorea.github.io/posts/squad_retrospective_2018h1/</guid>
+      <description>안녕하세요, 기술연구소에서 스크럼 마스터(SM)를 맡고 있는 김나리입니다. 저는 Cross-functional 조직인 Squad의 Practice 개선을 담당하고 있는데요, 이번 포스팅을 통해 Squad가 저희 기술연구소의 업무 방식으로 자리잡기까지의 시행착오와 잘 진행된 점, 개선할 점에 대해 되돌아보려고 합니다. (전지적 SM 시점이므로, 시각차는 있을 수 있습니다.)
+
+Went Well - &amp;lsquo;협업&amp;rsquo;에 대해 다시 생각하다  Squad - 하나의 과제 목표를 위해 &amp;ldquo;다양한 멤버들이 모여 협업&amp;rdquo;하는 팀
+ 저희가 Squad를 시행하게 된 가장 큰 계기는 &amp;lsquo;함께 일하는 것&amp;rsquo;에 대한 구성원의 태도 및 업무수행 방식에 있어 근본적인 변화가 필요했기 때문입니다.</description>
+    </item>
     
     <item>
       <title>기술 블로그 제작 후기</title>

@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="ko-KR"  prefix="og: http://ogp.me/ns#">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="스쿼드 도입 후 시행착오와 개선할 점">
+    <meta name="author" content="김나리">
+    <meta name="keywords" content="rgp, tech, blog, 요기요, 배달통, squad">
+
+
+    <title>Squad 2018 상반기 회고 - 공감대 형성, 그리고 3 Month Rule -- RGP Tech Blog</title>
+
+    
+
+    
+    <meta property="og:title" content="Squad 2018 상반기 회고 - 공감대 형성, 그리고 3 Month Rule">
+<meta property="og:description" content="스쿼드 도입 후 시행착오와 개선할 점 알지피 코리아인 지식공유 공간">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://rgpkorea.github.io/posts/squad_retrospective_2018h1/">
+
+
+<meta property="og:image" content="https://rgpkorea.github.io/posts/squad_retrospective_2018h1/../images/squad_retrospective_2018H1/undraw_development_ouy3.PNG" />
+
+<meta property="og:image" content="https://rgpkorea.github.io/posts/squad_retrospective_2018h1/../images/squad_retrospective_2018H1/undraw_growing_rk7d.PNG" />
+
+<meta property="og:image" content="https://rgpkorea.github.io/posts/squad_retrospective_2018h1/../images/squad_retrospective_2018H1/undraw_map_light_6ttm.PNG" />
+
+
+
+
+    
+    <link href="https://rgpkorea.github.io/css/bootstrap.min.css" rel="stylesheet">
+
+    
+    <link href="https://rgpkorea.github.io/css/clean-blog.min.css" rel="stylesheet">
+    <link href="https://rgpkorea.github.io/css/rgp-blog.css" rel="stylesheet">
+
+    
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='//fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="https://rgpkorea.github.io/css/nanumsquare.css">
+
+    
+    
+    
+
+</head>
+
+<body>
+
+    
+    <nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+        <div class="container-fluid">
+            
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+		  <span class="menu" style="background-image: url('https://rgpkorea.github.io/img/menu.png')"></span>
+                </button>
+		<a class="navbar-brand" href="https://rgpkorea.github.io/">
+		  <span class="logo" style="background-image: url('https://rgpkorea.github.io/img/logo.svg');"></span>
+		  <span class="logo-color" style="background-image: url('https://rgpkorea.github.io/img/logo-color.svg');"></span>
+		</a>
+            </div>
+
+                       
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    
+                    <li>
+                        <a href="https://rgpkorea.github.io/">Home</a>
+                    </li>
+                    
+                    <li>
+                        <a href="https://rgpkorea.github.io/posts/">Posts</a>
+                    </li>
+                    
+                    <li>
+                        <a href="https://rgpkorea.github.io/interview/">Interview</a>
+                    </li>
+                    
+                  </ul>
+            </div>
+           
+
+        </div>
+        
+    </nav>
+
+
+    
+    
+    <header class="intro-header" style="background-image: url('https://rgpkorea.github.io/img/post-bg.jpg')">
+      
+      <div class="container">
+        <div class="row">
+           <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+             <div class="post-heading">
+               <h1>Squad 2018 상반기 회고 - 공감대 형성, 그리고 3 Month Rule</h1>
+	       <hr class="small">
+               <h2 class="subheading">스쿼드 도입 후 시행착오와 개선할 점</h2>
+               <span class="meta">
+                 June 5, 2018, written by 김나리
+
+
+               </span>
+             </div>
+	         <div class="share">
+        
+            <a class="icon-twitter" href="https://twitter.com/share?text=Squad%202018%20%ec%83%81%eb%b0%98%ea%b8%b0%20%ed%9a%8c%ea%b3%a0%20-%20%ea%b3%b5%ea%b0%90%eb%8c%80%20%ed%98%95%ec%84%b1%2c%20%ea%b7%b8%eb%a6%ac%ea%b3%a0%203%20Month%20Rule&url=https%3a%2f%2frgpkorea.github.io%2fposts%2fsquad_retrospective_2018h1%2f"
+                onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+                <i class="fa fa-twitter"></i>
+                <span class="hidden">Twitter</span>
+            </a>
+        
+
+        
+            <a class="icon-facebook" href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2frgpkorea.github.io%2fposts%2fsquad_retrospective_2018h1%2f"
+                onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+                <i class="fa fa-facebook"></i>
+                <span class="hidden">Facebook</span>
+            </a>
+        
+
+        
+            <a class="icon-google-plus" href="https://plus.google.com/share?url=https%3a%2f%2frgpkorea.github.io%2fposts%2fsquad_retrospective_2018h1%2f"
+              onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
+              <i class="fa fa-google-plus"></i>
+                <span class="hidden">Google+</span>
+            </a>
+        
+        
+            <a class="icon-linkedin" href="https://www.linkedin.com/shareArticle?mini=true&title=Squad%202018%20%ec%83%81%eb%b0%98%ea%b8%b0%20%ed%9a%8c%ea%b3%a0%20-%20%ea%b3%b5%ea%b0%90%eb%8c%80%20%ed%98%95%ec%84%b1%2c%20%ea%b7%b8%eb%a6%ac%ea%b3%a0%203%20Month%20Rule&url=https%3a%2f%2frgpkorea.github.io%2fposts%2fsquad_retrospective_2018h1%2f&summary=%ec%8a%a4%ec%bf%bc%eb%93%9c%20%eb%8f%84%ec%9e%85%20%ed%9b%84%20%ec%8b%9c%ed%96%89%ec%b0%a9%ec%98%a4%ec%99%80%20%ea%b0%9c%ec%84%a0%ed%95%a0%20%ec%a0%90"
+               onclick="window.open(this.href, 'linkedin-share', 'width=554,height=481');return false;">
+               <i class="fa fa-linkedin"></i>
+               <span class="hidden">LinkedIn</span>
+            </a>
+        
+    </div>
+
+           </div>
+        </div>
+      </div>
+    </header>
+
+    
+    <article>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                  
+
+<p>안녕하세요, 기술연구소에서 스크럼 마스터(SM)를 맡고 있는 김나리입니다.
+저는 Cross-functional 조직인 Squad의 Practice 개선을 담당하고 있는데요, 이번 포스팅을 통해 Squad가 저희 기술연구소의 업무 방식으로 자리잡기까지의 시행착오와 잘 진행된 점, 개선할 점에 대해 되돌아보려고 합니다. (전지적 SM 시점이므로, 시각차는 있을 수 있습니다.)</p>
+
+<p><br /></p>
+
+<h3 id="went-well-협업-에-대해-다시-생각하다">Went Well - &lsquo;협업&rsquo;에 대해 다시 생각하다</h3>
+
+<p><img src="../images/squad_retrospective_2018H1/undraw_development_ouy3.png" alt="undraw_development_ouy3" /></p>
+
+<blockquote>
+<p>Squad - 하나의 과제 목표를 위해 &ldquo;다양한 멤버들이 모여 협업&rdquo;하는 팀</p>
+</blockquote>
+
+<p>저희가 Squad를 시행하게 된 가장 큰 계기는 &lsquo;함께 일하는 것&rsquo;에 대한 구성원의 태도 및 업무수행 방식에 있어 근본적인 변화가 필요했기 때문입니다. IT 업계에서 일하시는 분들이라면 대부분 공감하시겠지만, Product를 만들고 개선해나가면서, 혼자 할 수 있는 일은 아무것도 없습니다. 그만큼, 직무 기반으로 내가 맡은 일을 제대로 해내는 것도 중요하지만 Product를 함께 만드는 동료와 능동적으로 협업하는 것이 매우 중요합니다. RGP 기술연구소가 요기요, 배달통이라는 서비스와 함께 성장해오면서 규모는 커졌지만, 계속해서 사용자에게 필요한 가치를 제공하고, 꾸준히 성장해나가기 위해  현재의 모습으로 일하는 것이 우리가 도태되지 않고 경쟁력을 갖출 수 있는 모습인가라는 질문이 Squad의 시작점이었던 것 같습니다. 우리가 일을 해나감에 있어 &lsquo;협업&rsquo;은 당연시되지만, 협업을 잘 하기 위해 고민하는 사람과 환경이 부족했던 점을 인지하고 개선해나가게 되었습니다.<br />
+<br /></p>
+
+<p><strong>스쿼드에 참여한 멤버들의 긍정적 피드백</strong></p>
+
+<ul>
+<li>적극적으로 이슈 공유, 커뮤니케이션이 잘 되었다.</li>
+<li>이제 척 하면 탁 하고 팀웍이 잘 맞는다.</li>
+<li>벽에 부딪혀도 주변에서 잘 도와줌 &ldquo;감사합니다&rdquo;</li>
+<li>커뮤니케이션이 용이하고 상황파악하기 빠름</li>
+<li>얘기를 많이해서 좋았다. 팀워크 좋았다 생각</li>
+<li>협의(논의)를 많이 해볼 수 있었음.</li>
+<li>Squad가 모여 앉으니 확실히 능률이 높았다.</li>
+<li>단기간이지만 가까운 공간에 모여 작업한 것이 커뮤니케이션 하기 좋았다.</li>
+</ul>
+
+<p><br /></p>
+
+<h3 id="to-improve-squad의-업무수행-방식">To Improve - Squad의 업무수행 방식</h3>
+
+<p><img src="../images/squad_retrospective_2018H1/undraw_growing_rk7d.png" alt="undraw_growing_rk7d" /></p>
+
+<blockquote>
+<p>워터폴이냐 애자일이냐보다 더 중요한 것 - 목표 달성과 협업에 있어 우리에게 맞는 Practice를 만들어 나가는 것</p>
+</blockquote>
+
+<p>Squad 시행 초기에는 약 10개의 스쿼드가 구성되었고, 업무 수행 방식에 대해 디테일하게 가이드하기보다는, 각 스쿼드에서 자율적으로 룰을 정하고 목표를 달성해나갈 수 있도록 했습니다. 예를 들어 스쿼드가 구성되면 킥오프 &gt; 과제 수행 &gt; 릴리즈 &gt; 회고 &gt; 과제 종료 후 스쿼드가 해산되는데, 이 과정에서 &lsquo;회고&rsquo;는 각 스쿼드 특유의 경험, 팀워크, 시행착오 뿐만 아니라, 전체 스쿼드 전반에 걸쳐 공통적으로 실천이 필요한 Practice와 액션 아이템을 발굴하는데 큰 도움이 되었습니다.</p>
+
+<p>올해 초에는 단기로 추진/해산하는 스쿼드가 대부분이어서 Project Team과의 차이를 잘 모르겠다는 회고 내용이 주를 이루었습니다. 그런데 이러한 피드백에 변화가 생긴 건 2분기에 들어서며 3개월 이상 장기로 진행되는 스쿼드가 많아지면서, 스쿼드로 업무를 수행함에 있어 &lsquo;최소한의 기본 원칙&rsquo;이 필요함을 인지하게 되었습니다.</p>
+
+<p>장기로 진행되는 스쿼드의 경우, 과제 Scope이 큰 경우가 많은 반면, 개발방식에 있어서는 스쿼드 자율에 맡기다보니 다음과 같은 공통 이슈들이 발견되었습니다.</p>
+
+<ul>
+<li><p><strong>과제 Scope및 진척도를 스쿼드 멤버가 공통으로 볼 수 있는 View가 부재</strong>:
+개발자들은 소속된 각 팀의 칸반 보드를 바라보고 일하고 있고, 스쿼드의 다른 멤버(PO, UX, QA)들은 이를 활용하기 어려운 경우</p></li>
+
+<li><p><strong>점점 커지는 Scope과 늘어지는 일정</strong>:
+MVP(Minimum Viable Product)나 마일스톤에 대한 정의 없이 진행되어 Scope 관리가 되지 않고, 배포시기 예측에 혼란 발생</p></li>
+
+<li><p><strong>실제 구현된 결과물 확인은 어렵고, 일정에 대한 부담감 상승</strong>:
+각 개발 Component(Backend, Client)의 완료일을 중심으로 과제 진척도가 관리되는 경우, 실제 feature가 어떻게 구현되고 있는지 중간 점검이 어려움</p></li>
+</ul>
+
+<p>제 직무가 SM이긴 하지만, 워터폴 vs. 애자일 관점의 프레임으로 현 상황을 바라보길 원하진 않습니다. 다만, 대부분의 사람들에게 익숙한 워터폴 방식을 &ldquo;관성적으로&rdquo; 따랐을 때, 스쿼드 과제 수행에 적합하지 않은 점들이 확인되었고, 실험적으로 애자일 Practice를 활용하여 문제점들을 해결할 수 있다고 보고 있습니다. 제가 워터폴 방식에 대해 &ldquo;관성적&rdquo;이라고 언급한 이유는 RGP Korea의 경우, 스크럼 방식으로 요기요 서비스를 개발해오다가, 배달통을 비롯하여 NPOT, FoodFly와의 M&amp;A를 통해 급속도로 회사가 성장하면서 개발방식에 있어서도 여러 서비스의 개발 문화가 혼재된 상황이 되었기 때문이죠. 서로 다른 업무 수행 방식으로 인한 미스 커뮤니케이션이 잘못된 방향의 Product 개발로 이어지지 않기 위해서는, 모두가 공감할 수 있는 일관된 업무 수행 원칙이 필요한 단계가 되었습니다. 또한 스쿼드가 Self-organized team이 되기 위해서는 커뮤니케이션 및 협업 역량 측면에서 멤버들의 성숙함을 필요로 한다는 점도 깨닫게 되었고요.</p>
+
+<p>개인적으로는 우리 회사가 이미 규모의 성장을 이뤄낸 것 같지만, 롱런하기 위해서 지금에 안주하지 않고, 더 잘하기 위한 실험을 계속해나가야 한다는 점에서 여전히 우리 회사가 스타트업이라고 생각합니다. 스쿼드는 가치있는 Product를 만들기 위한 우리의 실험이고, 상반기를 마무리하는 시기에 Practice 개선을 위한 공감대가 형성되고 있다는 점이 느리지만 긍정적인 변화라고 생각합니다.</p>
+
+<p><br /></p>
+
+<h3 id="mvp와-3-month-rule">MVP와 3 Month Rule</h3>
+
+<p><img src="../images/squad_retrospective_2018H1/undraw_map_light_6ttm.png" alt="undraw_map_light_6ttm" /></p>
+
+<blockquote>
+<p>Are we on the same page? - 우리가 보고 있는 이 지도가 같은 지도이길</p>
+</blockquote>
+
+<p>전체적인 공감대 형성과 더불어, 상반기 중에 파일럿으로 빌링&amp;정산 시스템 구축 스쿼드에 애자일 Practice(스크럼&amp;칸반)를 기본 개발방식으로 도입해봄으로써 스쿼드의 기본 원칙을 수립할 수 있었습니다.</p>
+
+<p>** 1. MVP (Minimum Viable Product) - 최소요건 개발**</p>
+
+<p>** 2. Mid Review - 구현 결과물에 대한 중간 점검**</p>
+
+<p>** 3. 3 Month Rule - 첫 릴리즈까지 기간이 3개월을 넘지 않도록 함**</p>
+
+<p>Product를 개발함에 있어, 최소 요건으로 개발하여 출시하고, 지속적인 실험을 통해 개선해나가는 전략은 스타트업이라면 당연히 취하고 있는 방식이 아니냐고 물을 수도 있을텐데요, 개념적으로 이해하는 것과, 실제로 일정 규모 이상의 조직에서 실천해나가는 일이 쉬운 일은 아닌 것 같습니다. Product를 만드는 실무자들과 조직 리더의 방향이 일치할 때, 이러한 방식이 우리가 일하는 원칙과 문화로 자리잡을 수 있음을 이번 기회를 통해 느낄 수 있었습니다. (아직 갈 길이 멀긴 합니다 ㅠ_ㅠ)</p>
+
+<p>특히, MVP와 Mid Review에 대한 니즈와 장점은 빌링&amp;정산 스쿼드에서 도입했던 Practice를 예시로 짧게 설명드릴게요.</p>
+
+<p><strong>MVP 정의와 마일스톤</strong></p>
+
+<ul>
+<li><p>핵심 기능에 대해 4개의 Epic으로 나누었고, 그 중 3개 Epic을 MVP로 정의, 첫 릴리즈(Phase 1)에 반드시 필요한 기능 중심으로 Scope 관리 및 개발 진행.</p></li>
+
+<li><p>서비스 오픈에 필수적으로 필요하지 않은 기능은 우선순위를 낮춰 다음 Phase에 진행될 수 있도록 함.</p></li>
+</ul>
+
+<p>→ <em>반드시 필요한 기능을 개발하는데 리소스를 집중하고, 스프린트를 반복하면서 배포시기에 대한 예측도 잘 진행될 수 있었어요.</em></p>
+
+<p><strong>Mid Review</strong></p>
+
+<ul>
+<li>MVP 구현을 위해 4번의 스프린트가 진행되었고, 스프린트 종료 시마다 리뷰 진행</li>
+</ul>
+
+<p>→ <em>Stakeholder와 실제 구현 결과물을 정기적으로 리뷰함으로써 진척도를 투명하게 공유하고, 요구사항과 목표를 지속적으로 Sync 할 수 있었어요.</em></p>
+
+<p>즉, 스쿼드가 수행하는 과제에 대해 스쿼드 뿐만 아니라 관련된 Stakeholder도 Scope 및 현황에 대해 실제 구현되는 Product의 결과물에 집중하게 되어, 오픈을 앞두고 누락된 Scope이 발견되거나, 의도했던 바와 다르게 구현되는 등의 Risk를 완화할 수 있었습니다.</p>
+
+<p>결과적으로, 3 Month Rule은 위와 같은 Practice 도입을 통해, 스쿼드가 보다 짧은 호흡으로 실험하고 개선해나갈 수 있도록 변화하자는 취지를 반영하고 있습니다.</p>
+
+<p><br /></p>
+
+<h3 id="what-s-next">What&rsquo;s Next</h3>
+
+<p>상반기 회고라고 거창하게 썼지만, 상반기 동안의 모든 변화와 도전을 온전히 다 이 포스팅에 정리하진 못한 것 같네요^^;</p>
+
+<p>스쿼드라는 새로운 도전을 해오면서, SM이라는 직무 타이틀로 인해 업무 범위와 역할에 대해 여전히 질문을 많이 받는데요,</p>
+
+<p>앞서 말씀드렸듯이, 저는 스쿼드 = 애자일은 아니라고 생각합니다. 애자일을 도입하는 것이 위에 말씀드린 스쿼드 과제 수행 방식의 기본 원칙이 아니라, 우리가 일을 더 잘하고 협업하는 데 있어 가장 적합한 Practice는 무엇인가가 제 고민의 대상이고, 동료 분들과 함께 생각을 나누면서 풀어가야 할 숙제라고 생각합니다. (즉, 애자일이 목적이 아니라 도구로서 활용되어야 한다는 취지)</p>
+
+<p>앞으로는 상반기의 Lessons-Learned를 기반으로 위의 3가지 Practice가 모든 스쿼드의 기본 원칙으로 자리잡을 수 있도록 SM으로서 적극 서포트할 예정입니다.</p>
+
+<p>함께 일을 해나감에 있어, 어떤 편견을 갖기 보다는, 함께 부딪히고 작게 실험해나가면서 우리에게 더 맞는 방식을 찾아갈 수 있는 하반기가 되길 기대합니다.</p>
+
+<p>그리고, 저와 같은 고민과 도전을 즐겁게 이야기할 수 있는 동료 분들이 더 많아지길 희망합니다.</p>
+
+<p>읽어주셔서 감사합니다.</p>
+
+<p><br /></p>
+
+<ul>
+<li>본 포스팅에 포함된 illustration은 <a href="https://undraw.co/license">unDraw</a>의 이미지를 사용하였습니다.</li>
+</ul>
+
+<p><br>
+김나리, Scrum Master @RGP Korea</p>
+
+                  
+   <div id="disqus_thread"></div>
+<script>
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "rgp-tech-blog" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+                </div>
+            </div>
+        </div>
+    </article>
+
+    
+    <footer class="footer-post">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                  <ul class="list-inline">
+                    <li>
+                      <a href="https://rgpkorea.recruiter.co.kr" target="_blank">
+			  Career
+                      </a>
+                    </li>
+		    <li>
+		      <span>&#124;</span>
+		    </li>
+                    <li>
+                      <a href="https://www.deliveryhero.com" target="_blank">
+			  Delivery Hero Global Network
+                      </a>
+                    </li>
+                  </ul>
+                  <p class="copyright text-muted">Copyright © RGP Korea. All Rights Reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    
+    <script src="https://rgpkorea.github.io/js/jquery.min.js"></script>
+
+    
+    <script src="https://rgpkorea.github.io/js/bootstrap.min.js"></script>
+
+    
+    <script src="https://rgpkorea.github.io/js/clean-blog.js"></script>
+
+    
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-115391384-1', 'auto');
+ga('send', 'pageview');
+</script>
+
+
+</body>
+
+</html>
+
