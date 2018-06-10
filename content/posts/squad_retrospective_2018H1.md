@@ -136,8 +136,8 @@ Product를 개발함에 있어, 최소 요건으로 개발하여 출시하고, �
 김나리, Scrum Master @RGP Korea
 
 
-[undraw_development_ouy3]: ../images/squad_retrospective_2018H1/undraw_development_ouy3.PNG
+[undraw_development_ouy3]: ../images/squad_retrospective_2018H1/undraw_development_ouy3.png
 
-[undraw_growing_rk7d]: ../images/squad_retrospective_2018H1/undraw_growing_rk7d.PNG
+[undraw_growing_rk7d]: ../images/squad_retrospective_2018H1/undraw_growing_rk7d.png
 
-[undraw_map_light_6ttm]: ../images/squad_retrospective_2018H1/undraw_map_light_6ttm.PNG
+[undraw_map_light_6ttm]: ../images/squad_retrospective_2018H1/undraw_map_light_6ttm.png
