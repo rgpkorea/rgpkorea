@@ -3,8 +3,8 @@ title: Squad 2018 상반기 회고 - 공감대 형성, 그리고 3 Month Rule
 description: 스쿼드 도입 후 시행착오와 개선할 점
 author: 김나리
 image: post-bg.jpg
-images: ["../images/squad_retrospective_2018H1/undraw_development_ouy3.PNG", "../images/squad_retrospective_2018H1/undraw_growing_rk7d.PNG", "../images/squad_retrospective_2018H1/undraw_map_light_6ttm.PNG"]
-tags: ["rgp", "tech", "blog", "요기요", "배달통", "squad"]
+images: ["../images/squad_retrospective_2018H1/undraw_development_ouy3.png", "../images/squad_retrospective_2018H1/undraw_growing_rk7d.png", "../images/squad_retrospective_2018H1/undraw_map_light_6ttm.png"]
+tags: ["rgp", "tech", "blog", "요기요", "배달통", "squad", "스쿼드"]
 date: 2018-06-05T16:00:00+00:00
 type: post
 draft: false
