@@ -1,5 +1,5 @@
 ---
-title: Young Challenger Story 1부 - 백엔드개발팀 인턴 박형준의 프로젝트 수행기
+title: Young Challenger Story 1부 - 백엔드개발팀 인턴의 프로젝트 수행기
 description: 코딩뽀개기부터 도서관리 프로그램까지, 멘붕을 넘어 자신감을 얻게된 과정
 author: 박형준
 image: post-bg.jpg
@@ -17,7 +17,6 @@ comments: true
 <br>
 
 ### 1. 코딩 뽀개기
-
 부제: YC 뽀개기 시간(?)
 
 
