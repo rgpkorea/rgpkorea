@@ -7,10 +7,36 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-KR</language>
     <copyright>Copyright © RGP Korea. All Rights Reserved.</copyright>
-    <lastBuildDate>Tue, 05 Jun 2018 16:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 28 Jun 2018 10:05:00 +0000</lastBuildDate>
     
 	<atom:link href="https://rgpkorea.github.io/tags/blog/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Young Challenger Story 2부 - 백엔드개발팀 인턴십 활동 회고</title>
+      <link>https://rgpkorea.github.io/posts/yc_hjp_projects_2/</link>
+      <pubDate>Thu, 28 Jun 2018 10:05:00 +0000</pubDate>
+      
+      <guid>https://rgpkorea.github.io/posts/yc_hjp_projects_2/</guid>
+      <description>안녕하세요, YC(Young Challenger) 18기 박형준입니다. 1부 프로젝트 이야기에 이어 이번 포스팅에서는 YC 활동 회고를 통해 제가 배우고 느낀 점을 공유드리고자 합니다.
+About YC (Young Challenger)
+대학생 대상 산학연계 인턴십 프로그램으로, 기업문화를 접하고 희망 직무를 체험할 수 있는 프로그램 1. 잘된 점 
+ 학교에서 배울 수 없는 실무 프로그래밍 방식  학교에서도 자료구조, 알고리즘, 프로그래밍 프로젝트 등의 프로그래밍하면서 도움이 될 수 있는 지식들을 배울 수 있었습니다. 하지만 이렇게 실무에서 적용되는 기술 스택을 직접적으로 와닿게 본 것은 처음이었습니다.</description>
+    </item>
+    
+    <item>
+      <title>Young Challenger Story 1부 - 백엔드개발팀 인턴 박형준의 프로젝트 수행기</title>
+      <link>https://rgpkorea.github.io/posts/yc_hjp_projects/</link>
+      <pubDate>Thu, 28 Jun 2018 10:00:00 +0000</pubDate>
+      
+      <guid>https://rgpkorea.github.io/posts/yc_hjp_projects/</guid>
+      <description>안녕하세요, YC(Young Challenger) 18기 박형준입니다. 저는 지난 4개월 동안 요기요 백엔드개발팀에서 인턴십 활동을 했는데요, 이번 포스팅을 통해 그동안 제가 수행했던 프로젝트와 느낀 점을 공유하고자 합니다.
+About YC (Young Challenger)
+대학생 대상 산학연계 인턴십 프로그램으로, 기업문화를 접하고 희망 직무를 체험할 수 있는 프로그램
+
+1. 코딩 뽀개기 부제: YC 뽀개기 시간(?)
+ 원래 목적  제가 소속된 요기요 백엔드개발팀 내에서 진행하는 알고리즘 회의 시간 ‘코딩 뽀개기&amp;rsquo;는 처음에는 제가 주도하던 시간이 아니었습니다.</description>
+    </item>
     
     <item>
       <title>Squad 2018 상반기 회고 - 공감대 형성, 그리고 3 Month Rule</title>
