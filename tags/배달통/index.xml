@@ -7,10 +7,20 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-KR</language>
     <copyright>Copyright © RGP Korea. All Rights Reserved.</copyright>
-    <lastBuildDate>Thu, 28 Jun 2018 10:05:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 03 Jul 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://rgpkorea.github.io/tags/%EB%B0%B0%EB%8B%AC%ED%86%B5/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Agile 2018 발표자 도전기 1부 - Experience Report &amp; Submission Process</title>
+      <link>https://rgpkorea.github.io/posts/agile2018_speaker_part1/</link>
+      <pubDate>Tue, 03 Jul 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://rgpkorea.github.io/posts/agile2018_speaker_part1/</guid>
+      <description>안녕하세요, 기술연구소에서 스크럼 마스터를 맡고 있는 김나리입니다. 지난 3월, 저희 기술블로그에 스타트업에서 스케일업으로라는 글을 올렸었는데요, 관련 내용을 보다 발전시켜, 올해 8월 미국 San Diego에서 개최되는 Agile 2018 컨퍼런스에서 발표할 수 있는 기회를 얻게 되었습니다.
+Agile 2018 컨퍼런스는 올해로 개최 17년째를 맞이하는 비영리 국제 컨퍼런스인데요, 매년 약 40개국에서 애자일 분야의 전문가 및 실무자들이 참석합니다. 프로그램은 애자일 및 리더십, 협업, 코칭, 커뮤니케이션 등 다양한 주제의 트랙으로 구성되며 약 250개 이상의 세션 발표가 진행되는 대규모 이벤트입니다.</description>
+    </item>
     
     <item>
       <title>Young Challenger Story 2부 - 백엔드개발팀 인턴십 활동 회고</title>
@@ -19,7 +29,7 @@
       
       <guid>https://rgpkorea.github.io/posts/yc_hjp_projects_2/</guid>
       <description>안녕하세요, YC(Young Challenger) 18기 박형준입니다. 1부 프로젝트 이야기에 이어 이번 포스팅에서는 YC 활동 회고를 통해 제가 배우고 느낀 점을 공유드리고자 합니다.
-About YC (Young Challenger): 대학생 대상 산학연계 인턴십 프로그램으로, 기업문화를 접하고 희망 직무를 체험할 수 있는 프로그램
+About YC (Young Challenger): 알지피 코리아의 대학생 대상 산학연계 인턴십 프로그램으로, 기업문화를 접하고 희망 직무를 체험할 수 있는 프로그램
 
 1. 잘된 점  학교에서 배울 수 없는 실무 프로그래밍 방식  학교에서도 자료구조, 알고리즘, 프로그래밍 프로젝트 등의 프로그래밍하면서 도움이 될 수 있는 지식들을 배울 수 있었습니다. 하지만 이렇게 실무에서 적용되는 기술 스택을 직접적으로 와닿게 본 것은 처음이었습니다.</description>
     </item>
@@ -31,7 +41,7 @@ About YC (Young Challenger): 대학생 대상 산학연계 인턴십 프로그�
       
       <guid>https://rgpkorea.github.io/posts/yc_hjp_projects/</guid>
       <description>안녕하세요, YC(Young Challenger) 18기 박형준입니다. 저는 지난 4개월 동안 요기요 백엔드개발팀에서 인턴십 활동을 했는데요, 이번 포스팅을 통해 그동안 제가 수행했던 프로젝트와 느낀 점을 공유하고자 합니다.
-About YC (Young Challenger): 대학생 대상 산학연계 인턴십 프로그램으로, 기업문화를 접하고 희망 직무를 체험할 수 있는 프로그램
+About YC (Young Challenger): 알지피 코리아의 대학생 대상 산학연계 인턴십 프로그램으로, 기업문화를 접하고 희망 직무를 체험할 수 있는 프로그램
 
 1. 코딩 뽀개기 부제: YC 뽀개기 시간(?)
  원래 목적  제가 소속된 요기요 백엔드개발팀 내에서 진행하는 알고리즘 회의 시간 ‘코딩 뽀개기&amp;rsquo;는 처음에는 제가 주도하던 시간이 아니었습니다.</description>

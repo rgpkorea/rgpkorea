@@ -7,10 +7,20 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-KR</language>
     <copyright>Copyright © RGP Korea. All Rights Reserved.</copyright>
-    <lastBuildDate>Fri, 16 Mar 2018 01:07:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 03 Jul 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://rgpkorea.github.io/tags/scrum/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Agile 2018 발표자 도전기 1부 - Experience Report &amp; Submission Process</title>
+      <link>https://rgpkorea.github.io/posts/agile2018_speaker_part1/</link>
+      <pubDate>Tue, 03 Jul 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://rgpkorea.github.io/posts/agile2018_speaker_part1/</guid>
+      <description>안녕하세요, 기술연구소에서 스크럼 마스터를 맡고 있는 김나리입니다. 지난 3월, 저희 기술블로그에 스타트업에서 스케일업으로라는 글을 올렸었는데요, 관련 내용을 보다 발전시켜, 올해 8월 미국 San Diego에서 개최되는 Agile 2018 컨퍼런스에서 발표할 수 있는 기회를 얻게 되었습니다.
+Agile 2018 컨퍼런스는 올해로 개최 17년째를 맞이하는 비영리 국제 컨퍼런스인데요, 매년 약 40개국에서 애자일 분야의 전문가 및 실무자들이 참석합니다. 프로그램은 애자일 및 리더십, 협업, 코칭, 커뮤니케이션 등 다양한 주제의 트랙으로 구성되며 약 250개 이상의 세션 발표가 진행되는 대규모 이벤트입니다.</description>
+    </item>
     
     <item>
       <title>개발 조직에서의 리더십 - Practice and Mindset</title>
