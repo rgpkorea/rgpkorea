@@ -5,7 +5,7 @@ author: 김나리
 image: post-bg.jpg
 images: ["../images/agile2018/Agile 2018_Submission system_20180228_1.png", "../images/agile2018/Agile 2018_Submission system_20180228_2.png", "../images/agile2018/Agile 2018_Submission system_20180228_3.png", "../images/agile2018/agile2018_submissiontimeline.png", ../images/agile2018/agile2018_program_schedule.png]
 tags: ["rgp", "tech", "blog", "요기요", "배달통", "scrum"]
-date: 2018-07-03T17:00:00+00:00
+date: 2018-07-03T00:00:00+00:00
 type: post
 draft: false
 comments: true
