@@ -64,10 +64,14 @@ Submission System을 통해 공유된 다양한 주제의 발표 제안서를 �
 <br>필수로 작성해야하는 항목이 템플릿으로 정해져 있었는데요, 제 발표 주제의 경우, 요기요&배달통이 스타트업에서 현재에 이르기까지 성장 단계별로 겪었던 어려움과 어떻게 극복해왔는지에 대해 다루기 때문에 Stage 1~3로 나누어 보다 체계적으로 스토리를 전달하고자 했습니다.
 
 - **Title** :<br> Scaling at Food-tech Startup - Transformation Challenges, Lessons Learned and Growth
+
 - **Abstract** :<br> 발표 내용에 대한 요약 (프로그램 공지 - Conference Directory에 전체 공개되는 내용)
+
 - **Lessons Learned from Your Experience** :<br> 발표 내용에 담긴 경험을 통해 배운 점 (해당 경험이 컨퍼런스 참가자들에게도 유의미한 내용인가? 라는 측면에서)
+
 - **Information about the Experience** :<br> 발표에서 다룰 내용 및 관련된 경험, 발표자의 관련 경력에 대해 구체적으로 기술하는 항목. Track Chairs 및 심사팀에게만 공개되는 내용
-- **Presentation History** :<br> 본 발표 내용이 과거에 다른 컨퍼런스 등을 통해 이미 공개되었던 내용인지, 처음 발표되는 내용인지에 대해 기술. 또는 발표자의 관련 Presentation 경력. (처음 발표되는 내용이고, 발표자로서의 역량에 대해 심사팀에 신뢰를 줄 수 있어야 한다는 판단 하에 과거 Ingnite Seoul Speaker 경험 등 대중 앞에서 Presentation 했던 경험을 함께 기재했습니다.)
+
+- **Presentation History** :<br> 본 발표 내용이 과거에 다른 컨퍼런스 등을 통해 이미 공개되었던 내용인지, 처음 발표되는 내용인지에 대해 기술. 또는 발표자의 관련 Presentation 경력. (처음 발표되는 내용이고, 발표자로서의 역량에 대해 심사팀에 신뢰를 줄 수 있어야 한다는 판단 하에 과거 Ignite Seoul Speaker 경험 등 대중 앞에서 Presentation 했던 경험을 함께 기재했습니다.)
 
 
 
@@ -76,7 +80,7 @@ Submission System을 통해 공유된 다양한 주제의 발표 제안서를 �
 
 > _“We get many proposals about transformations, and naturally, transformations have a lot in common from one organization to another. So, it's important to include things which will help the reviewers know aspects of the transformation and your experience during it which you believe may be unique and provide unique learnings for the attendees of the conference.” - Susan Burk, Co-Chair_
 
-이러한 피드백을 토대로 제안서를 계속 보완해 나갔고, 이 도전의 시작점을 만들어주신 CTO 현준님의 *빨간펜 첨삭* 으로 지원사격을 해주신 덕분에, 더 탄탄한 제안서를 완성할 수 있었습니다!  
+이러한 피드백을 토대로 제안서를 계속 보완해 나갔고, 이 도전의 시작점을 만들어주신 CTO 현준님이 *빨간펜 첨삭* 으로 지원사격을 해주신 덕분에, 더 탄탄한 제안서를 완성할 수 있었습니다!  
 
 #### **3. 최종 제출: 발표자 선정 및 프로그램 공지**
 
