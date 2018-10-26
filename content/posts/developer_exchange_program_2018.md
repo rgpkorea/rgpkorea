@@ -4,7 +4,7 @@ description: 글로벌 배달앱 기술 및 노하우 공유
 author: 박오영
 image: post-bg.jpg
 tags: ["rgp", "tech", "blog", "요기요", "배달통", "MSA", "딜리버리히어로"]
-date: 2018-10-26T15:00:00+00:00
+date: 2018-10-26T00:00:00+00:00
 type: post
 draft: false
 comments: true
