@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://rgpkorea.github.io/posts/developer_exchange_program_2018/</loc>
+    <lastmod>2018-10-26T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://rgpkorea.github.io/posts/agile2018_speaker_part1/</loc>
     <lastmod>2018-07-03T00:00:00+00:00</lastmod>
   </url>
@@ -64,7 +69,7 @@
   
   <url>
     <loc>https://rgpkorea.github.io/tags/blog/</loc>
-    <lastmod>2018-07-03T00:00:00+00:00</lastmod>
+    <lastmod>2018-10-26T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -111,8 +116,14 @@
   </url>
   
   <url>
+    <loc>https://rgpkorea.github.io/tags/msa/</loc>
+    <lastmod>2018-10-26T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://rgpkorea.github.io/</loc>
-    <lastmod>2018-07-03T00:00:00+00:00</lastmod>
+    <lastmod>2018-10-26T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -124,7 +135,7 @@
   
   <url>
     <loc>https://rgpkorea.github.io/tags/rgp/</loc>
-    <lastmod>2018-07-03T00:00:00+00:00</lastmod>
+    <lastmod>2018-10-26T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -154,13 +165,13 @@
   
   <url>
     <loc>https://rgpkorea.github.io/tags/</loc>
-    <lastmod>2018-07-03T00:00:00+00:00</lastmod>
+    <lastmod>2018-10-26T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://rgpkorea.github.io/tags/tech/</loc>
-    <lastmod>2018-07-03T00:00:00+00:00</lastmod>
+    <lastmod>2018-10-26T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -183,12 +194,18 @@
   
   <url>
     <loc>https://rgpkorea.github.io/posts/</loc>
-    <lastmod>2018-07-03T00:00:00+00:00</lastmod>
+    <lastmod>2018-10-26T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://rgpkorea.github.io/tags/%EA%B0%9C%EB%B0%9C%EB%A6%AC%EB%8D%94%EC%8B%AD/</loc>
     <lastmod>2018-03-16T01:07:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://rgpkorea.github.io/tags/%EB%94%9C%EB%A6%AC%EB%B2%84%EB%A6%AC%ED%9E%88%EC%96%B4%EB%A1%9C/</loc>
+    <lastmod>2018-10-26T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -200,7 +217,7 @@
   
   <url>
     <loc>https://rgpkorea.github.io/tags/%EB%B0%B0%EB%8B%AC%ED%86%B5/</loc>
-    <lastmod>2018-07-03T00:00:00+00:00</lastmod>
+    <lastmod>2018-10-26T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -224,7 +241,7 @@
   
   <url>
     <loc>https://rgpkorea.github.io/tags/%EC%9A%94%EA%B8%B0%EC%9A%94/</loc>
-    <lastmod>2018-07-03T00:00:00+00:00</lastmod>
+    <lastmod>2018-10-26T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
