@@ -1,3 +1,4 @@
+
 # Install [Hugo](https://gohugo.io/)
 
 정적 웹 페이지 생성을 위해 **휴고**를 이용하였습니다.
