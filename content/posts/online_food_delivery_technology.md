@@ -4,7 +4,7 @@ description: 편리하고 다양한 배달 음식 문화와 '기술'의 역할
 author: 조현준
 image: post-bg.jpg
 tags: ["rgp", "tech", "blog", "요기요", "배달통", "배달앱", "푸드테크"]
-date: 2018-10-29T10:00:00+00:00
+date: 2018-10-29T00:00:00+00:00
 type: post
 draft: false
 comments: true
