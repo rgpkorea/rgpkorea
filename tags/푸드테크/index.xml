@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>푸드테크 on RGP Tech Blog</title>
+    <link>https://rgpkorea.github.io/tags/%ED%91%B8%EB%93%9C%ED%85%8C%ED%81%AC/</link>
+    <description>Recent content in 푸드테크 on RGP Tech Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ko-KR</language>
+    <copyright>Copyright © RGP Korea. All Rights Reserved.</copyright>
+    <lastBuildDate>Mon, 29 Oct 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://rgpkorea.github.io/tags/%ED%91%B8%EB%93%9C%ED%85%8C%ED%81%AC/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>음식 배달과 TECHNOLOGY</title>
+      <link>https://rgpkorea.github.io/posts/online_food_delivery_technology/</link>
+      <pubDate>Mon, 29 Oct 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://rgpkorea.github.io/posts/online_food_delivery_technology/</guid>
+      <description>최근 4-5년 간 배달 음식 업계는 매우 큰 변화를 겪고 있다. “철가방”을 든 배달원이 “짜장면 시키신 분~~”을 외치는 것으로 대표되던 대한민국 음식 배달이, 때와 장소를 가리지 않는 정도를 넘어 이제는 바닷가재, 스테이크덮밥에 심지어는 삼겹살 불판까지도 집으로 배달을 해 준다. 이처럼 편리하고 다양한 배달 음식 문화가 만들어진 데는, 음식점에서 정성스럽게 음식을 만들어 주시는 분들이 계시고, 조리된 음식을 따뜻하게 집으로 배달을 해 주시는 배달원 분들의 노고가 있어서 이기는 하나, 한편으로는 “technology”가 큰 역할을 했음을 부인할 수는 없다.</description>
+    </item>
+    
+  </channel>
+</rss>
