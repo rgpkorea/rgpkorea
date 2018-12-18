@@ -1,5 +1,5 @@
 ---
-title: Yogiyo Backend Team - TechInternShip 1기 회고록
+title: Yogiyo Backend 개발 - TechInternShip 1기 회고록
 description: 사람은 사람이고 언어는 도구일뿐
 author: 김성렬
 image: post-bg.jpg
