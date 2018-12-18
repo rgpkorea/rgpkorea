@@ -4,7 +4,7 @@ description: 사람은 사람이고 언어는 도구일뿐
 author: 김성렬
 image: post-bg.jpg
 images: []
-tags: ["rgp", "tech", "blog", "요기요", "배달통","DeliveryHeroKorea"]
+tags: ["tech", "blog", "요기요", "배달통","DeliveryHeroKorea"]
 date: 2018-12-18T10:59:44+09:00
 type: post
 draft: true
