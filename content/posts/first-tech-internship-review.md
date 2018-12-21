@@ -1,5 +1,5 @@
 ---
-title:  Backend 개발 - Tech 인턴십 1기 회고록
+title: 요기요 Backend 개발 - Tech 인턴십 1기 회고록
 description: 사람은 사람이고 언어는 도구일뿐
 author: 김성렬
 image: post-bg.jpg
