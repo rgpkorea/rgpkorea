@@ -7,7 +7,7 @@ images: []
 tags: ["tech", "blog", "요기요", "배달통","DeliveryHeroKorea"]
 date: 2018-12-18T10:59:44+09:00
 type: post
-draft: true
+draft: false
 comments: true
 ---
 
